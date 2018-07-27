@@ -5,10 +5,12 @@ module.exports = {
     // edit to add all file to cache; configure for your project below
     // eg cache all css file in the root folder
     "index.html",
+    "manifest.json",
     "images/*.png",
     "images/*.svg",
     "images/*.jpg",
     "images/*.gif",
+    "images/icons/*.png",
     "js/*.js",
     "css/*.css",
     "scss/*.scss"

@@ -8,7 +8,11 @@ if (workbox) {
     workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "e49eb661c7f6d1a0e7e632e3981e40d8"
+    "revision": "d8987b9f4f4e2c49126441715e345a80"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "38815126c4d85a1d8a51dc8bedfa51f7"
   },
   {
     "url": "images/sample.png",
@@ -25,6 +29,14 @@ if (workbox) {
   {
     "url": "images/sample.gif",
     "revision": "af1c75fca697e689f560f79a432828ea"
+  },
+  {
+    "url": "images/icons/icon48.png",
+    "revision": "072517e17445cc907c5e33fed5bc37bd"
+  },
+  {
+    "url": "images/icons/sample48.png",
+    "revision": "072517e17445cc907c5e33fed5bc37bd"
   },
   {
     "url": "js/app.js",
