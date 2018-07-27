@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- register service worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(function() {
+                        console.log("Service Worker Registered, Cheers to PWA Fire!");
+                    });
+            });
+        }
+    </script>
+    <!-- end of service worker -->
+    <title>Your Web App Title</title>
+    <meta name="theme-color" content="#fff" />
+    <!-- add your web app icon -->
+	<link rel="shortcut icon" sizes="32x32" href="images/icons/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- add canonical url -->
+    <link rel="canonical" href="https://yourwebapp.eg/page">
+    <!-- twitter meta data // -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:site_name" content="Web App Name">
+	<meta name="twitter:creator" content="@yourhandle">
+	<meta name="twitter:title" content="Web App Title">
+	<meta name="twitter:description" content="Web App or Page Description">
+	<meta name="twitter:image" content="images/cards/card.jpg">
+	<meta name="keywords" content="Maye Edwin, service worker, workbox, google developers, technology, PWA Fire, javascript, json, web, progressive web apps, pwa" />
+    <meta name="author" content="Maye Edwin" />
+    <!-- facebook sharing meta data -->
+    <meta property="og:title" content="Web App Title">
+    <meta property="og:site_name" content="Web App Name">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Web App or Page Description">
+    <meta property="og:image" content="images/cards/card.pnd">
+    <meta property="og:image:type" content="image/png" />
+     <!-- web app styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!--
+your web app
+-->
+
+<!-- web app scripts -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
