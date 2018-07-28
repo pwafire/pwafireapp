@@ -5,3 +5,25 @@ Project [PWA Fire Bundle](https://github.com/mayeedwin/pwafire) is an open sourc
 ### [What is pwafireapp?](https://github.com/mayeedwin/pwafireapp)
 
 Progressive Web App template which is designed with all progressive web app best practises and strutured ready for PWA Fire Bundle 4.0.0 use.
+
+### [Directory Structure]()
+
+Here is the basic suggested skeleton for pwafire app that each of the starter templates will conform to:
+
+```bash
+├── app
+│   ├── build
+│   ├── node-modules
+│   ├── src
+│       ├── **/*.js
+│       ├── **/*.js
+│       ├── **/*.js
+│       ├── **/*.js
+│       ├── **/*.js
+│       ├── **/*.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── server.js
+│   └── sw-config.js
+
+```
