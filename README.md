@@ -8,7 +8,7 @@ Progressive Web App template which is designed with all progressive web app best
 
 ### [Directory Structure]()
 
-Here is the basic suggested skeleton for pwafire app that each of the starter templates will conform to:
+Here is the basic skeleton for pwafire app that each of the starter templates will conform to:
 
 ```bash
 ├── app
