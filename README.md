@@ -17,6 +17,7 @@ Here is the basic suggested skeleton for pwafire app that each of the starter te
 │   ├── src
 │       ├── css
 │       ├── images
+│           ├── icons
 │       ├── js
 │       ├── scss
 │       ├── index.html
