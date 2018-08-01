@@ -13,7 +13,7 @@ Here is the basic skeleton for pwafire app that each of the starter templates wi
 ```bash
 ├── app
 │   ├── build
-│   ├── node-modules
+│   ├── node_modules
 │   ├── src
 │       ├── css
 │       ├── images
