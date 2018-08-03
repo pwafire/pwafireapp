@@ -8,23 +8,23 @@
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('/service-worker.js')
                     .then(function() {
-                        console.log("Service Worker Registered, Cheers to PWA Fire!");
+                        console.log("Service Worker Registered, Cheers to PWA Fire 🎉");
                     });
             });
         }
     </script>
     <!-- end of service worker -->
-    <title>Your Web App Title</title>
+    <title>PWA Fire App [Your Web App Title]</title>
     <meta name="theme-color" content="#fff" />
     <!-- add web manifest -->
     <link rel="manifest" href="/manifest.json">
-    <!-- add your web app icon -->
-	<link rel="shortcut icon" sizes="32x32" href="images/sample.svg">
+    <!-- add your web app icon url -->
+	<link rel="shortcut icon" sizes="32x32" href="/images/sample.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- add canonical url -->
     <link rel="canonical" href="https://yourwebapp.eg/page">
-    <!-- twitter meta data // -->
+    <!-- add twitter meta data // -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta property="og:site_name" content="Web App Name">
 	<meta name="twitter:creator" content="@yourhandle">
@@ -33,24 +33,26 @@
 	<meta name="twitter:image" content="images/sample.jpg">
 	<meta name="keywords" content="Maye Edwin, service worker, workbox, google developers, technology, PWA Fire, javascript, json, web, progressive web apps, pwa" />
     <meta name="author" content="Maye Edwin" />
-    <!-- facebook sharing meta data -->
+    <!-- add facebook sharing meta data -->
     <meta property="og:title" content="Web App Title">
     <meta property="og:site_name" content="Web App Name">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Web App or Page Description">
     <meta property="og:image" content="images/sample.png">
     <meta property="og:image:type" content="image/png" />
-     <!-- web app styles -->
+     <!-- add web app styles; below is just an example; delete it -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
+    <h3>Add Your App's Content</h3>
     <!--
 your web app
 -->
 
-<!-- web app scripts -->
+<!-- add web app scripts; below is just an example; delete it -->
+
 <script src="js/app.js"></script>
 
 </body>

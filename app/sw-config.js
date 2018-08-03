@@ -3,7 +3,7 @@ module.exports = {
     // relative to the current working directory.
     "globPatterns": [
     // edit to add all file to cache; configure for your project below
-    // eg cache all css file in the root folder
+    // e.g cache all .css files in the root folder
     "index.html",
     "manifest.json",
     "images/*.png",
@@ -19,7 +19,7 @@ module.exports = {
     "swSrc": "src/service-worker.js", 
     // The path to the source service worker file that can contain your own customized code,
     "swDest": "build/service-worker.js", 
-    // in addition to containing a match for injectionPointRegexp.
+    // In addition to containing a match for injectionPointRegexp.
    "globIgnores": [
     "../sw-config.js"
     ]

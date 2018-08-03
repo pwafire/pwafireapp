@@ -11,6 +11,7 @@ Progressive Web App template which is designed with all progressive web app best
 Here is the basic skeleton for pwafire app that each of the starter templates will conform to:
 
 ```bash
+
 ├── app
 │   ├── build
 │   ├── node_modules

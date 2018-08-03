@@ -4,8 +4,8 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js')
   
 if (workbox) {
-    console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire🎉`);
+    console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🎉`);
     workbox.precaching.precacheAndRoute([]);
 } else {
-    console.log(`Oops! Workbox didn't load 😬`);
+    console.log(`Oops! Workbox didn't load `);
 }

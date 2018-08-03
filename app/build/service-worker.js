@@ -4,15 +4,15 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js')
   
 if (workbox) {
-    console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire🎉`);
+    console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🎉`);
     workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "d8987b9f4f4e2c49126441715e345a80"
+    "revision": "8c88d9165f51271eaa879dc65a69d857"
   },
   {
     "url": "manifest.json",
-    "revision": "38815126c4d85a1d8a51dc8bedfa51f7"
+    "revision": "091a3c637be5dbae4aaeaf6e4d108243"
   },
   {
     "url": "images/sample.png",
@@ -29,6 +29,42 @@ if (workbox) {
   {
     "url": "images/sample.gif",
     "revision": "af1c75fca697e689f560f79a432828ea"
+  },
+  {
+    "url": "images/icons/icon-128x128.png",
+    "revision": "77489d93c3c696ef273012eb8dc4974f"
+  },
+  {
+    "url": "images/icons/icon-144x144.png",
+    "revision": "dfe18e48039cab4922007fd074af0513"
+  },
+  {
+    "url": "images/icons/icon-152x152.png",
+    "revision": "33ce3d7a6d3d589db4343e8d2e1acbd6"
+  },
+  {
+    "url": "images/icons/icon-192x192.png",
+    "revision": "62a10e0d2392e9012d9a5d33735e9498"
+  },
+  {
+    "url": "images/icons/icon-384x384.png",
+    "revision": "feedd855dd402ba655aba5b7ca305ea1"
+  },
+  {
+    "url": "images/icons/icon-48x48.png",
+    "revision": "072517e17445cc907c5e33fed5bc37bd"
+  },
+  {
+    "url": "images/icons/icon-512x512.png",
+    "revision": "1bda3235e63ef336b99b9e036ca8b143"
+  },
+  {
+    "url": "images/icons/icon-72x72.png",
+    "revision": "e31638a951e41f2659e2a458e17f640b"
+  },
+  {
+    "url": "images/icons/icon-96x96.png",
+    "revision": "1569b9a007badec275f5e03fcabbda05"
   },
   {
     "url": "images/icons/icon48.png",
