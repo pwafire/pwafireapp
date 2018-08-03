@@ -8,11 +8,11 @@ if (workbox) {
     workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "8c88d9165f51271eaa879dc65a69d857"
+    "revision": "54679ad2c6c187988bf37f57e11f6674"
   },
   {
     "url": "manifest.json",
-    "revision": "091a3c637be5dbae4aaeaf6e4d108243"
+    "revision": "68e92298b5e319e6e3f1b96fe4eab171"
   },
   {
     "url": "images/sample.png",
@@ -88,5 +88,5 @@ if (workbox) {
   }
 ]);
 } else {
-    console.log(`Oops! Workbox didn't load 😬`);
+    console.log(`Oops! Workbox didn't load `);
 }

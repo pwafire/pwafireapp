@@ -3,8 +3,8 @@
     "display": "standalone",
     "orientation":"portrait",
     "theme_color": "#fff",           
-    "short_name": "PWA name",
-    "name": "PWA name",
+    "short_name": "Your PWA Name",
+    "name": "Your PWA Name",
     "description": "description or purpose of your progressive web app",
     "lang": "en-US",
 "icons": [
