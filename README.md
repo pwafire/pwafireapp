@@ -26,8 +26,10 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 │       ├── css
 │       ├── images
 │           ├── icons
+            ├── others
 │       ├── js
 │       ├── scss
+        ├── pages
 │       ├── index.html
 │       ├── manifest.json
 │       ├── service-worker.js
@@ -42,12 +44,16 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 
 ```bash
 ├── app
+│   ├── build
+│   ├── node_modules
 │   ├── src
 │       ├── css
 │       ├── images
 │           ├── icons
+            ├── others
 │       ├── js
 │       ├── scss
+        ├── pages
 │       ├── index.html
 │       ├── manifest.json
 │       ├── service-worker.js
