@@ -47,6 +47,8 @@ Once you have started the server, open the browser and navigate to http://localh
 
 Open the **src** folder in your text editor. The **src** folder is where you will be building your progressive web app or copy all your projects source files as in the app structure.
 
+Add or create your javascript files as in the app structure shown below. For example, you will place all **.css** files in the **css** folder.
+
 ```bash
 
 │   ├── src
@@ -60,6 +62,30 @@ Open the **src** folder in your text editor. The **src** folder is where you wil
 │       ├── index.html 
 │       ├── manifest.json 
 │       ├── service-worker.js 
+
+```
+
+For the **images** folder, make sure you have all your app icons in your project as shown below; For the **others** folder; You could rename it to say **team** and add images to it but make sure to update that in the **service-worker.js** as shown below;
+
+**NOTE** All the code is commented BTW; Read through to understand each line.
+
+```javascript
+
+   /*  cache images in the e.g others folder; edit to other folders you got 
+   and config in the sw-config.js file
+    */
+   workbox.routing.registerRoute(
+    /(.*)others(.*)\.(?:png|gif|jpg)/,
+    workbox.strategies.cacheFirst({
+      cacheName: 'images',
+      plugins: [
+        new workbox.expiration.Plugin({
+          maxEntries: 50,
+          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+        })
+      ]
+    })
+  );
 
 ```
 
