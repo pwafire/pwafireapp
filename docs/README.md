@@ -43,7 +43,21 @@ Download [PWA Fire App here](https://github.com/mayeedwin/pwafireapp/archive/mas
         
 The *npm install* command installs the project dependencies based on the configuration in **package.json.** Open project/package.json and examine its contents. Get the [explanation here](https://pwafire.org/developer/pwa/started/#sw-config-for-node)
 
-Once you have started the server, open the browser and navigate to http://localhost:8081/ to view the app. The app is a simple one page progressive web app just showcases a working PWA Fire App.
+Once you have started the server, open the browser and navigate to http://localhost:8081/ to view the app. The app is a simple one page progressive web app which just showcases a working PWA Fire App.
+
+Open the **src** folder in your text editor. The **src** folder is where you will be building your progressive web app or copy all your projects source files as in the app structure.
+
+│   ├── src
+|       ├── css
+│       ├── images  // with all app images here
+|          ├── icons // with the PWA icons
+|          ├── others // can be any name with any other images say **team**
+│       ├── js // place all .js files
+│       ├── scss // place all .scss files
+|       ├── pages // could be any folder with other pages say **speakers**
+│       ├── index.html // copy to it your home page contents
+│       ├── manifest.json // copy to it your manifest config
+│       ├── service-worker.js // default service worker
 
 
 
