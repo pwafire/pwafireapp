@@ -49,15 +49,15 @@ Open the **src** folder in your text editor. The **src** folder is where you wil
 
 │   ├── src
 |       ├── css
-│       ├── images  // with all app images here
-|          ├── icons // with the PWA icons
-|          ├── others // can be any name with any other images say **team**
-│       ├── js // place all .js files
-│       ├── scss // place all .scss files
-|       ├── pages // could be any folder with other pages say **speakers**
-│       ├── index.html // copy to it your home page contents
-│       ├── manifest.json // copy to it your manifest config
-│       ├── service-worker.js // default service worker
+│       ├── images  
+|          ├── icons 
+|          ├── others 
+│       ├── js 
+│       ├── scss 
+|       ├── pages 
+│       ├── index.html 
+│       ├── manifest.json 
+│       ├── service-worker.js 
 
 
 
