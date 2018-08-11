@@ -23,10 +23,10 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 │   ├── build
 │   ├── node_modules
 │   ├── src
-│       ├── css
+|       ├── css
 │       ├── images
-            ├── icons
-            ├── others
+|          ├── icons
+|          ├── others
 │       ├── js
 │       ├── scss
 |       ├── pages
@@ -47,8 +47,8 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 │   ├── src
 │       ├── css
 │       ├── images
-            ├── icons
-            ├── others
+|           ├── icons
+|          ├── others
 │       ├── js
 │       ├── scss
 |       ├── pages
