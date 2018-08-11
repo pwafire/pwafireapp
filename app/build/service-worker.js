@@ -8,11 +8,11 @@ if (workbox) {
     workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "7d353389972edc30a363a56bd951b54b"
+    "revision": "88e5ed9dc64e3ecd3539738524fc32db"
   },
   {
     "url": "manifest.json",
-    "revision": "85dc2ad4a55d91f1f2c1c3469894b592"
+    "revision": "8a3d5b14a98c42feb6b5beff8707f88f"
   },
   {
     "url": "images/sample.png",
@@ -88,7 +88,7 @@ if (workbox) {
   },
   {
     "url": "css/main.css",
-    "revision": "1246b808f691cc558b668465896c588c"
+    "revision": "2b06d114a639e7cc96bb6d12e3d4a1b5"
   },
   {
     "url": "scss/app.scss",
@@ -111,7 +111,7 @@ if (workbox) {
       ]
     })
   );
-      /* Make your JS and CSS ⚡ fast by returning the assets from the cache, 
+    /* Make your JS and CSS ⚡ fast by returning the assets from the cache, 
   while making sure they are updated in the background for the next use.
   */
   workbox.routing.registerRoute(
