@@ -22,28 +22,28 @@ Make sure you have all this checked before we start;
   
 #### [Get the app](https://github.com/mayeedwin/pwafireapp/archive/master.zip)
 
-The app structure looks as follows. The important directory for our web app is going to be the **src** folder in which you will place all of your project files or start your new progressive web app project from.
-   
-   - [ ] **For node-module or build process** 
-   
-```bash
-├── app
-│   ├── build
-│   ├── node_modules
-│   ├── src
-|       ├── css
-│       ├── images
-|          ├── icons
-|          ├── others
-│       ├── js
-│       ├── scss
-|       ├── pages
-│       ├── index.html
-│       ├── manifest.json
-│       ├── service-worker.js
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── server.js
-│   └── sw-config.js
+The important directory for our web app is going to be the **src** folder in which you will place all of your project files or start your new progressive web app project from.
 
-```
+Download [PWA Fire App here](https://github.com/mayeedwin/pwafireapp/archive/master.zip)
+
+#### [Install project dependencies and start the server]()
+
+ 1. Navigate to the app directory via the command line:
+
+        cd pwafireapp-master/app
+     
+ 2. Run the following commands to install the project dependencies:
+
+        npm install
+        
+ 3. Then build and serve the app with these commands:
+
+        npm run build
+        npm run start
+        
+The *npm install* command installs the project dependencies based on the configuration in **package.json.** Open project/package.json and examine its contents. Get the [explanation here](https://pwafire.org/developer/pwa/started/#sw-config-for-node)
+
+Once you have started the server, open the browser and navigate to http://localhost:8081/ to view the app. The app is a simple one page progressive web app just showcases a working PWA Fire App.
+
+
+
