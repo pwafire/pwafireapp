@@ -51,7 +51,7 @@
 just a demo to show how pwafireapp works
 -->
     <div class="header-pwafire">
-        <img class="image-pwafire" src="images/icons/icon-144x144.png" alt="pwafireapp-logo">
+        <img class="image-pwafire" src="images/pwafireapp.gif" alt="pwafireapp-logo">
         <h3> Yey! I am beta version of PWA Fire App </h3>
         <p> Have fun with me! Happy code dance 💃💃</p>
         <p><a href="https://pwafire.org/developer/app">Get started here</a></p>
@@ -62,6 +62,20 @@ your web app
 
 <!-- add web app scripts; below is just an 
     example; delete it -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA6Uws98UwivuiRLnACQFnVTMy58XE7pN4",
+        authDomain: "pwafireapp.firebaseapp.com",
+        databaseURL: "https://pwafireapp.firebaseio.com",
+        projectId: "pwafireapp",
+        storageBucket: "",
+        messagingSenderId: "719664020729"
+      };
+      firebase.initializeApp(config);
+    </script>
 <script src="js/app.js"></script>
 </body>
 

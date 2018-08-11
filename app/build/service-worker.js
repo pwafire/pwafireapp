@@ -8,7 +8,7 @@ if (workbox) {
     workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "81b9901daaa0ac0fcae71f4d64bb1495"
+    "revision": "baee2c4647724313296e90c4f15b31df"
   },
   {
     "url": "manifest.json",
@@ -80,7 +80,7 @@ if (workbox) {
   },
   {
     "url": "pages/index.html",
-    "revision": "507f2f72b2304e2e8af61a21dcce24c0"
+    "revision": "f2e9dd28b2101850b743cca5373407ca"
   },
   {
     "url": "js/app.js",
@@ -96,26 +96,27 @@ if (workbox) {
   }
 ]);
     
-   // cache js, css, scc files 
-    workbox.routing.registerRoute(
-        /.*\.(?:png|gif|jpg)/,
-        workbox.strategies.cacheFirst({
-          cacheName: 'images',
-          plugins: [
-            new workbox.expiration.Plugin({
-              maxEntries: 50,
-              maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-            })
-          ]
+   /*  cache images in the e.g others folder; edit to other folders you got 
+   and config in the sw-config.js file
+    */
+   workbox.routing.registerRoute(
+    /(.*)others(.*)\.(?:png|gif|jpg)/,
+    workbox.strategies.cacheFirst({
+      cacheName: 'images',
+      plugins: [
+        new workbox.expiration.Plugin({
+          maxEntries: 50,
+          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
         })
-      );
-
+      ]
+    })
+  );
       /* Make your JS and CSS ⚡ fast by returning the assets from the cache, 
   while making sure they are updated in the background for the next use.
   */
   workbox.routing.registerRoute(
     // cache js, css, scc files 
-    /.*\.(?:css|js|scss|html)/,
+    /.*\.(?:css|js|scss|)/,
     // use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // use a custom cache name
