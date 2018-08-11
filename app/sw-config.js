@@ -11,6 +11,7 @@ module.exports = {
     "images/*.jpg",
     "images/*.gif",
     "images/icons/*.png",
+    "pages/*.html",
     "js/*.js",
     "css/*.css",
     "scss/*.scss"

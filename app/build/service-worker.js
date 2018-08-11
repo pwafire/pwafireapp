@@ -8,11 +8,11 @@ if (workbox) {
     workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "54679ad2c6c187988bf37f57e11f6674"
+    "revision": "81b9901daaa0ac0fcae71f4d64bb1495"
   },
   {
     "url": "manifest.json",
-    "revision": "68e92298b5e319e6e3f1b96fe4eab171"
+    "revision": "85dc2ad4a55d91f1f2c1c3469894b592"
   },
   {
     "url": "images/sample.png",
@@ -25,6 +25,10 @@ if (workbox) {
   {
     "url": "images/sample.jpg",
     "revision": "6d9bab13381d02d7519e759bd3a04377"
+  },
+  {
+    "url": "images/pwafireapp.gif",
+    "revision": "719418b077a83f2af47f2a07b1ac28d1"
   },
   {
     "url": "images/sample.gif",
@@ -75,18 +79,68 @@ if (workbox) {
     "revision": "072517e17445cc907c5e33fed5bc37bd"
   },
   {
+    "url": "pages/index.html",
+    "revision": "507f2f72b2304e2e8af61a21dcce24c0"
+  },
+  {
     "url": "js/app.js",
     "revision": "d41d8cd98f00b204e9800998ecf8427e"
   },
   {
     "url": "css/main.css",
-    "revision": "d41d8cd98f00b204e9800998ecf8427e"
+    "revision": "1246b808f691cc558b668465896c588c"
   },
   {
     "url": "scss/app.scss",
     "revision": "d41d8cd98f00b204e9800998ecf8427e"
   }
 ]);
+    
+   // cache js, css, scc files 
+    workbox.routing.registerRoute(
+        /.*\.(?:png|gif|jpg)/,
+        workbox.strategies.cacheFirst({
+          cacheName: 'images',
+          plugins: [
+            new workbox.expiration.Plugin({
+              maxEntries: 50,
+              maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+            })
+          ]
+        })
+      );
+
+      /* Make your JS and CSS ⚡ fast by returning the assets from the cache, 
+  while making sure they are updated in the background for the next use.
+  */
+  workbox.routing.registerRoute(
+    // cache js, css, scc files 
+    /.*\.(?:css|js|scss|html)/,
+    // use cache but update in the background ASAP
+    workbox.strategies.staleWhileRevalidate({
+      // use a custom cache name
+      cacheName: 'styles',
+    })
+  );
+
+   // cache google fonts
+  workbox.routing.registerRoute(
+    new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
+    workbox.strategies.cacheFirst({
+      cacheName: 'google-fonts',
+      plugins: [
+        new workbox.cacheableResponse.Plugin({
+          statuses: [0, 200],
+        }),
+      ],
+    }),
+  ); 
+
+  // add offline analytics 
+  workbox.googleAnalytics.initialize(); 
+    
 } else {
     console.log(`Oops! Workbox didn't load `);
 }
+
+  
