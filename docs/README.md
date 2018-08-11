@@ -20,7 +20,7 @@ Make sure you have all this checked before we start;
   - [Node.js](https://nodejs.org/en/) installed
   - [Firebase](https://pwafire.org/developer/codelabs/firebase-hosting-web/) if you need to deploy it
   
-#### [Get the app]()
+#### [Get the app](https://github.com/mayeedwin/pwafireapp/archive/master.zip)
 
 The app structure looks as follows. The important directory for our web app is going to be the **src** folder in which you will place all of your project files or start your new progressive web app project from.
    
@@ -47,8 +47,3 @@ The app structure looks as follows. The important directory for our web app is g
 │   └── sw-config.js
 
 ```
-This lab requires [Node.js](https://nodejs.org/en/). Install the latest long term support (LTS) version if you have not already. [Click here](https://github.com/mayeedwin/pwafireapp/archive/master.zip) to download the code as a zip file.
-
-
-
-
