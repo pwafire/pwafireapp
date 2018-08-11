@@ -29,7 +29,7 @@ Here is the basic skeleton for pwafire app that each of the two starter template
             ├── others
 │       ├── js
 │       ├── scss
-        ├── pages
+|       ├── pages
 │       ├── index.html
 │       ├── manifest.json
 │       ├── service-worker.js
@@ -53,7 +53,7 @@ Here is the basic skeleton for pwafire app that each of the two starter template
             ├── others
 │       ├── js
 │       ├── scss
-        ├── pages
+|       ├── pages
 │       ├── index.html
 │       ├── manifest.json
 │       ├── service-worker.js
