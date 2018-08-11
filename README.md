@@ -48,7 +48,7 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 │       ├── css
 │       ├── images
 |           ├── icons
-|          ├── others
+|           ├── others
 │       ├── js
 │       ├── scss
 |       ├── pages
