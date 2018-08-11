@@ -44,8 +44,6 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 
 ```bash
 ├── app
-│   ├── build
-│   ├── node_modules
 │   ├── src
 │       ├── css
 │       ├── images
