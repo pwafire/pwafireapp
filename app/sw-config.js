@@ -21,7 +21,7 @@ module.exports = {
     // The path to the source service worker file that can contain your own customized code,
     "swDest": "build/service-worker.js", 
     // In addition to containing a match for injectionPointRegexp.
-   "globIgnores": [
+    "globIgnores": [
     "../sw-config.js"
     ]
     };

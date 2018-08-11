@@ -1,6 +1,7 @@
 // authored by Maye Edwin : https://twitter.com/MayeEdwin1
 // Add offline properties, push notification, web share, web payments, etc
 // pwafire 4.0.0
+
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js')
   
 if (workbox) {
@@ -8,7 +9,7 @@ if (workbox) {
     workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "f044a1bb2016b853f45424176873ea89"
+    "revision": "0b0d2fee5c8cafea1d72dad3d43fddf8"
   },
   {
     "url": "manifest.json",
@@ -139,6 +140,10 @@ if (workbox) {
 
   // add offline analytics 
   workbox.googleAnalytics.initialize(); 
+
+
+workbox.skipWaiting();
+workbox.clientsClaim();
     
 } else {
     console.log(`Oops! Workbox didn't load `);

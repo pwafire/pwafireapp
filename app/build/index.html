@@ -10,8 +10,13 @@
                     .then(function() {
                         console.log("Service Worker Registered, Cheers to PWAFire 🎉");
                     });
-            });
-        }
+            }
+        );
+        self.addEventListener('install', function(event) {
+        // The promise that skipWaiting() returns can be safely ignored.
+        self.skipWaiting();
+        });
+    }
     </script>
     <!-- end of service worker -->
     <title> [ PWA Fire App  ] </title>
