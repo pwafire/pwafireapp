@@ -17,7 +17,7 @@ version if you have not already.
 Make sure you have all this checked before we start;
 
   - Connection to the internet
-  - A [browser that supports service worker](https://pwafire.org/developer/tools/browser-test/)
+  - A browser that [supports service worker](https://pwafire.org/developer/tools/browser-test/)
   - A text editor; preferbly [VS Code](https://code.visualstudio.com/)
   - [Node.js](https://nodejs.org/en/) installed
   - [Firebase](https://pwafire.org/developer/codelabs/firebase-hosting-web/) if you need to deploy it
@@ -49,7 +49,7 @@ Once you have started the server, open the browser and navigate to http://localh
 
 Open the **src** folder in your text editor. The **src** folder is where you will be building your progressive web app or copy all your projects source files as in the app structure.
 
-Add or create your javascript files as in the app structure shown below. For example, you will place all **.css** files in the **css** folder.
+Add or create your javascript files as in the **app structure** shown below. For example, you will place all **.css** files in the **css** folder.
 
 ```bash
 
@@ -67,11 +67,11 @@ Add or create your javascript files as in the app structure shown below. For exa
 
 ```
 
-For the **images** folder, make sure you have all your app icons in your project as shown below and copy all images to it; The **icons** should be of sizes as in the **manifest.json** file. Atleast have an icon size of 144x144 is needed.
+For the **images** folder, make sure you have all your app icons in your project as shown below and copy all images to it; The **icons** should be of sizes as in the **manifest.json** file. Atleast have an icon size of 144x144 is required for our progressive web app to install.
 
 **Generate** your progressive [web app icons here](https://app-manifest.firebaseapp.com/). Unzip the icons and copy them to the **icons** folder of the [PWA Fire App](https://pwafire.org/developer/app)
 
-For the **others** folder; You could rename it to say **team** and add images to it but make sure to update that in the **service-worker.js** as shown below;
+For the **others** folder; You could rename it to say **team** and add images to it but make sure to update that in the **service-worker.js** as shown below; Just an example of extra folders you may want to add to your project or your project has.
 
 **NOTE** All the code is commented BTW; Read through to understand each line. It is good to do so!
 
