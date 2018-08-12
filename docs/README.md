@@ -17,7 +17,7 @@ Make sure you have all this checked before we start;
 
   - Connection to the internet
   - A browser that [supports service worker](https://pwafire.org/developer/tools/browser-test/)
-  - A text editor; preferbly [VS Code](https://code.visualstudio.com/)
+  - A text editor; like [VS Code](https://code.visualstudio.com/)
   - [Node.js](https://nodejs.org/en/) installed
   - [Firebase](https://pwafire.org/developer/codelabs/firebase-hosting-web/) if you need to deploy it
   
