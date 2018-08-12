@@ -11,7 +11,9 @@ Before we get started; let us make sure everything is ready and we have all tool
 
 #### [What you will need]()
 
-This lab requires Node.js. Install the latest long term support (LTS) version if you have not already.
+[PWA Fire App](https://pwafire.org/developer/app) requires Node.js. Install the latest long term support (LTS) 
+version if you have not already.
+
 Make sure you have all this checked before we start;
 
   - Connection to the internet
