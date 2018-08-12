@@ -68,7 +68,7 @@ Add or create your javascript files as in the **app structure** shown below. For
 
 For the **images** folder, make sure you have all your app icons in your project as shown below and copy all images to it; The **icons** should be of sizes as in the **manifest.json** file. Atleast have an icon size of 144x144 is required for our progressive web app to install.
 
-**Generate** your progressive [web app icons here](https://app-manifest.firebaseapp.com/). Unzip the icons and copy them to the **icons** folder of the [PWA Fire App](https://pwafire.org/developer/app). Open **manifest.json** and configure your web app name, short name and theme color (must be the same as specified in the **index.html**).
+**Generate** your progressive [web app icons here](https://app-manifest.firebaseapp.com/). Unzip the icons and copy them to the **icons** folder of the [PWA Fire App](https://pwafire.org/developer/app). Open **manifest.json** and configure your web app name, short name and theme color *(must be the same as specified in the **index.html**).*
 
 For the **others** folder; You could rename it to say **team** and add images to it but make sure to update that in the **service-worker.js** as shown below; Just an example of extra folders you may want to add to your project or your project has.
 
