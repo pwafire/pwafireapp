@@ -12,9 +12,9 @@ module.exports = {
     "images/*.gif",
     "images/icons/*.png",
     "pages/*.html",
-    "js/*.js",
-    "css/*.css",
-    "scss/*.scss"
+    "assets/js/*.js",
+    "assets/css/*.css",
+    "assets/scss/*.scss"
     ],
     // The path and filename of the service worker file that will be created by the build process.
     "swSrc": "src/service-worker.js", 

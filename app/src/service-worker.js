@@ -32,7 +32,7 @@ if (workbox) {
     // use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // use a custom cache name
-      cacheName: 'styles',
+      cacheName: 'assets',
     })
   );
 
@@ -51,7 +51,6 @@ if (workbox) {
 
   // add offline analytics 
   workbox.googleAnalytics.initialize(); 
-
 
 workbox.skipWaiting();
 workbox.clientsClaim();

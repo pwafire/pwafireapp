@@ -9,7 +9,7 @@ if (workbox) {
     workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "0b0d2fee5c8cafea1d72dad3d43fddf8"
+    "revision": "38f1849a2f263cce9c25bc8325ec10cb"
   },
   {
     "url": "manifest.json",
@@ -84,15 +84,15 @@ if (workbox) {
     "revision": "f2e9dd28b2101850b743cca5373407ca"
   },
   {
-    "url": "js/app.js",
+    "url": "assets/js/app.js",
     "revision": "d41d8cd98f00b204e9800998ecf8427e"
   },
   {
-    "url": "css/main.css",
+    "url": "assets/css/main.css",
     "revision": "2b06d114a639e7cc96bb6d12e3d4a1b5"
   },
   {
-    "url": "scss/app.scss",
+    "url": "assets/scss/app.scss",
     "revision": "d41d8cd98f00b204e9800998ecf8427e"
   }
 ]);
@@ -121,7 +121,7 @@ if (workbox) {
     // use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // use a custom cache name
-      cacheName: 'styles',
+      cacheName: 'assets',
     })
   );
 
@@ -140,7 +140,6 @@ if (workbox) {
 
   // add offline analytics 
   workbox.googleAnalytics.initialize(); 
-
 
 workbox.skipWaiting();
 workbox.clientsClaim();
