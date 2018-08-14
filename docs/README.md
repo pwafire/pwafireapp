@@ -1,5 +1,7 @@
 ### [Overview](https://pwafire.org/app)
 
+![PWA Fire App](https://github.com/mayeedwin/pwafireapp/blob/master/app/src/images/others/screenshot.png)
+
 Before we get started; let us make sure everything is ready and we have all tools needed.
 
 #### [What you should already know]()
