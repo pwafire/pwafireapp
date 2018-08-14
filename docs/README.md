@@ -52,17 +52,18 @@ Add or create your javascript files as in the **app structure** shown below. For
 
 ```bash
 
-│   ├── src
-|       ├── css
-│       ├── images  
-|          ├── icons 
-|          ├── others 
-│       ├── js 
-│       ├── scss 
-|       ├── pages 
-│       ├── index.html 
-│       ├── manifest.json 
-│       ├── service-worker.js 
+│   ├── src
+│       ├── assets
+|          ├── css
+|          ├── js
+|          ├── scss
+│       ├── images
+|          ├── icons
+|          ├── others
+|       ├── pages
+│       ├── index.html
+│       ├── manifest.json
+│       ├── service-worker.js
 
 ```
 
