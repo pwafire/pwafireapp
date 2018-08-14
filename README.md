@@ -8,7 +8,7 @@ Progressive Web App starter kit which is designed with all [progressive web app 
 
 It has two versions; 
 
-1. For project with build process, npm ; as in the guide below
+1. For project with build process, npm ; [as in this guide here](https://github.com/mayeedwin/pwafireapp/tree/master/docs)
 
 2. For project without any build process; [config guide is here](https://pwafire.org/developer/pwa/started/)
 
