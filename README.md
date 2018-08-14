@@ -23,12 +23,13 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 │   ├── build
 │   ├── node_modules
 │   ├── src
-|       ├── css
+│       ├── assets
+|          ├── css
+|          ├── js
+|          ├── scss
 │       ├── images
 |          ├── icons
 |          ├── others
-│       ├── js
-│       ├── scss
 |       ├── pages
 │       ├── index.html
 │       ├── manifest.json
@@ -45,12 +46,13 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 ```bash
 ├── app
 │   ├── src
-│       ├── css
+│       ├── assets
+|          ├── css
+|          ├── js
+|          ├── scss
 │       ├── images
-|           ├── icons
-|           ├── others
-│       ├── js
-│       ├── scss
+|          ├── icons
+|          ├── others
 |       ├── pages
 │       ├── index.html
 │       ├── manifest.json
