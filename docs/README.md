@@ -46,8 +46,6 @@ The *npm install* command installs the project dependencies based on the configu
 
 Once you have started the server, open the browser and navigate to http://localhost:8081/ to view the app. The app is a simple one page progressive web app which just showcases a working PWA Fire App.
 
-![PWA Fire App](https://github.com/mayeedwin/pwafireapp/blob/master/app/src/images/others/screenshot.png)
-
 <p align="center">
   <img src="https://github.com/mayeedwin/pwafireapp/blob/master/app/src/images/others/screenshot.png">
 </p>
