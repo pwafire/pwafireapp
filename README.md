@@ -14,7 +14,7 @@ It has two versions;
 
 ### [App Structure]()
 
-Here is the basic skeleton for **PWA Fire App**  that each of the two starter templates will conform to:
+Here is the basic skeleton for **PWA Fire App**  that each of the two starter PWA Kits will conform to:
 
    - [ ] **For node-module or build process** 
    
