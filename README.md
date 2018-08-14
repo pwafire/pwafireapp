@@ -18,7 +18,7 @@ Here is the basic skeleton for **PWA Fire App**  that each of the two starter PW
 
    - [ ] **For node-module or build process** 
    
-For **node modules,**  follow the setup guide as curated in [the doc folder here](https://github.com/mayeedwin/pwafireapp/tree/master/docs) to get started building a scalable progresiive web app with **PWA Fire App.** 
+For **node modules,**  follow the setup guide as curated in [the doc folder here](https://github.com/mayeedwin/pwafireapp/tree/master/docs) to get started building a scalable progressive web app with **PWA Fire App.** 
 
 ```bash
 ├── app
