@@ -43,6 +43,10 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 
  - [ ] **For without any build process like npm** 
 
+If you do not have or do not want to use any build process such as ** npm**, make sure to 
+remove all other files and that your app structure looks as below. Configure your **service-worker.js** 
+file as in [this codelab here](https://pwafire.org/developer/pwa/started/#sw-config)
+
 ```bash
 ├── app
 │   ├── src
