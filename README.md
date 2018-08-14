@@ -8,27 +8,30 @@ Progressive Web App starter kit which is designed with all [progressive web app 
 
 It has two versions; 
 
-1. For project with build process, npm ; as in the guide below
+1. For project with build process, npm ; [as in this guide here](https://github.com/mayeedwin/pwafireapp/tree/master/docs)
 
 2. For project without any build process; [config guide is here](https://pwafire.org/developer/pwa/started/)
 
 ### [App Structure]()
 
-Here is the basic skeleton for pwafire app that each of the two starter templates will conform to:
+Here is the basic skeleton for **PWA Fire App**  that each of the two starter PWA Kits will conform to:
 
    - [ ] **For node-module or build process** 
+   
+For **node modules,**  follow the setup guide as curated in [the doc folder here](https://github.com/mayeedwin/pwafireapp/tree/master/docs) to get started building a scalable progressive web app with **PWA Fire App.** 
 
 ```bash
 ├── app
 │   ├── build
 │   ├── node_modules
 │   ├── src
-|       ├── css
+│       ├── assets
+|          ├── css
+|          ├── js
+|          ├── scss
 │       ├── images
 |          ├── icons
 |          ├── others
-│       ├── js
-│       ├── scss
 |       ├── pages
 │       ├── index.html
 │       ├── manifest.json
@@ -42,15 +45,20 @@ Here is the basic skeleton for pwafire app that each of the two starter template
 
  - [ ] **For without any build process like npm** 
 
+If you do not have or do not want to use any build process such as ** npm**, make sure to 
+remove all other files and that your app structure looks as below. Configure your **service-worker.js** 
+file as in [this codelab here](https://pwafire.org/developer/pwa/started/#sw-config)
+
 ```bash
 ├── app
 │   ├── src
-│       ├── css
+│       ├── assets
+|          ├── css
+|          ├── js
+|          ├── scss
 │       ├── images
-|           ├── icons
-|           ├── others
-│       ├── js
-│       ├── scss
+|          ├── icons
+|          ├── others
 |       ├── pages
 │       ├── index.html
 │       ├── manifest.json
