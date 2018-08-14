@@ -1,16 +1,16 @@
-## [pwafireapp]()
+## [PWA Fire App *Beta*]()
 
 Project [PWA Fire Bundle](https://github.com/mayeedwin/pwafire) is an open source javascript and json bundle that allows you to convert your existing website into a progressive web app or build one in a few.
 
-### [What is pwafireapp?](https://github.com/mayeedwin/pwafireapp)
+### [What is PWA Fire App?](https://github.com/mayeedwin/pwafireapp)
 
-Progressive Web App template which is designed with all [progressive web app best practices](https://developers.google.com/web/progressive-web-apps/checklist) and strutured ready for PWA Fire Bundle 4.0.0 use.
+Progressive Web App starter kit which is designed with all [progressive web app best practices](https://developers.google.com/web/progressive-web-apps/checklist) and strutured ready for PWA Fire Bundle 4.0.0 use.
 
 It has two versions; 
 
-1. For project with build process, npm
+1. For project with build process, npm ; as in the guide below
 
-2. For project without any build process
+2. For project without any build process; [config guide is here](https://pwafire.org/developer/pwa/started/)
 
 ### [App Structure]()
 
