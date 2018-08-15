@@ -110,3 +110,6 @@ The web app files are copied over to the **build** folder when the **npm run bui
 **Alternatively**, you can test your web app using [chrome web server](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) and host with [firebase](https://firebase.google.com/docs/web/setup) as in [this codelab](https://pwafire.org/developer/codelabs/firebase-hosting-web/).
 
 You are done! Welcome to Canaan!
+
+### [Engage us](https://twitter.com/pwafire)
+Donate a star, like, follow and contribute in any way. You got any **bug?** Report it [here for support.](https://github.com/mayeedwin/pwafireapp/issues/new) You want to contribute? Create your [feature here.](https://github.com/mayeedwin/pwafireapp/issues/new)
