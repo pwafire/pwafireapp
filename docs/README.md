@@ -48,7 +48,7 @@ Once you have started the server, open the browser and navigate to http://localh
 
 Open the **src** folder in your text editor. The **src** folder is where you will be building your progressive web app or copy all your projects source files as in the app structure.
 
-Find demo PWA Fire App [here](https://pwafireapp.firebaseapp.com)
+Find demo [PWA Fire App here](https://pwafireapp.firebaseapp.com)
 
 Add or create your javascript files as in the **app structure** shown below. For example, you will place all **.css** files in the **css** folder.
 
