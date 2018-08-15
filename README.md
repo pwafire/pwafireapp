@@ -67,7 +67,7 @@ file as in [this codelab here](https://pwafire.org/developer/pwa/started/#sw-con
 ```
 
 #### [Getting started](https://pwafire.org/developer/codelabs/cloud-firestore-for-web)
-Get started on how to set up PWAFireApp [ in this setup guide ](https://github.com/mayeedwin/pwafireapp/tree/master/docs).
+Get started on how to set up PWA Fire App [ in this setup guide ](https://github.com/mayeedwin/pwafireapp/tree/master/docs).
 
 #### [Engage us](https://twitter.com/pwafire)
 Donate a star, like, follow and contribute in any way. If you use [PWA Fire Developer Resources](https://pwafire.org/developer), kindly let us know. JUST simply [Tweet us](https://twitter.com/pwafire).
