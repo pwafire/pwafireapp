@@ -46,11 +46,9 @@ The *npm install* command installs the project dependencies based on the configu
 
 Once you have started the server, open the browser and navigate to http://localhost:8081/ to view the app. The app is a simple one page progressive web app which just showcases a working PWA Fire App.
 
-<p align="center">
-  <img src="https://github.com/mayeedwin/pwafireapp/blob/master/app/src/images/others/screenshot.png">
-</p>
-
 Open the **src** folder in your text editor. The **src** folder is where you will be building your progressive web app or copy all your projects source files as in the app structure.
+
+Find demo PWA Fire App [here](https://pwafireapp.firebaseapp.com)
 
 Add or create your javascript files as in the **app structure** shown below. For example, you will place all **.css** files in the **css** folder.
 
