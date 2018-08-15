@@ -8,6 +8,8 @@ Before we get started; let us make sure everything is ready and we have all tool
     - How to run commands from the command line
     - Some familiarity with service workers is recommended
     - Familiarity with Node.js is recommended
+ 
+ **NOTE** All the code is commented BTW; Read through to understand each line. It is good to do so!
 
 #### [What you will need]()
 
@@ -76,8 +78,6 @@ Find demo [PWA Fire App here](https://pwafireapp.firebaseapp.com)
  3. **Generate** your progressive [web app icons here](https://app-manifest.firebaseapp.com/). Unzip the icons and copy them to the **icons** folder of the [PWA Fire App](https://pwafire.org/developer/app). Open **manifest.json** and configure your web app name, short name and theme color **(must be the same as specified in the *index.html*).**
 
  4. For the **others** folder; You could rename it to say **team** and add images to it but make sure to update that in the **service-worker.js** as shown below; Just an example of extra folders you may want to add to your project or your project has.
-
-**NOTE** All the code is commented BTW; Read through to understand each line. It is good to do so!
 
 ```javascript
 
