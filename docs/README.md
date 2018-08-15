@@ -46,11 +46,13 @@ The *npm install* command installs the project dependencies based on the configu
 
 Once you have started the server, open the browser and navigate to http://localhost:8081/ to view the app. The app is a simple one page progressive web app which just showcases a working PWA Fire App.
 
+### [Add your project source files or start a new project]()
+
 Open the **src** folder in your text editor. The **src** folder is where you will be building your progressive web app or copy all your projects source files as in the app structure.
 
 Find demo [PWA Fire App here](https://pwafireapp.firebaseapp.com)
 
-Add or create your javascript files as in the **app structure** shown below. For example, you will place all **.css** files in the **css** folder.
+ 1. Add or create your source files as in the **app structure** shown below. For example, you will place all **.css** files in the **css** folder.
 
 ```bash
 
@@ -69,11 +71,11 @@ Add or create your javascript files as in the **app structure** shown below. For
 
 ```
 
-For the **images** folder, make sure you have all your app icons in your project as shown below and copy all images to it; The **icons** should be of sizes as in the **manifest.json** file. Atleast have an icon size of 144x144 is required for our progressive web app to install.
+ 2. For the **images** folder, make sure you have all your app icons in your project as shown below and copy all images to it; The **icons** should be of sizes as in the **manifest.json** file. Atleast have an icon size of 144x144 is required for our progressive web app to install.
 
-**Generate** your progressive [web app icons here](https://app-manifest.firebaseapp.com/). Unzip the icons and copy them to the **icons** folder of the [PWA Fire App](https://pwafire.org/developer/app). Open **manifest.json** and configure your web app name, short name and theme color **(must be the same as specified in the *index.html*).**
+ 3. **Generate** your progressive [web app icons here](https://app-manifest.firebaseapp.com/). Unzip the icons and copy them to the **icons** folder of the [PWA Fire App](https://pwafire.org/developer/app). Open **manifest.json** and configure your web app name, short name and theme color **(must be the same as specified in the *index.html*).**
 
-For the **others** folder; You could rename it to say **team** and add images to it but make sure to update that in the **service-worker.js** as shown below; Just an example of extra folders you may want to add to your project or your project has.
+ 4. For the **others** folder; You could rename it to say **team** and add images to it but make sure to update that in the **service-worker.js** as shown below; Just an example of extra folders you may want to add to your project or your project has.
 
 **NOTE** All the code is commented BTW; Read through to understand each line. It is good to do so!
 
@@ -96,6 +98,8 @@ For the **others** folder; You could rename it to say **team** and add images to
   );
 
 ```
+
+5. To make even your progressive web app discoverable and your pages built with best web practices, configure your pages as in the **head** tag of the default **index.html** in the **src** folder.
 
 ### [Build your progressive web app]()
 
