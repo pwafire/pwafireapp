@@ -46,7 +46,7 @@ Download [PWA Fire App here](https://github.com/mayeedwin/pwafireapp/archive/mas
         
 The *npm install* command installs the project dependencies based on the configuration in **package.json.** Open **../app/package.json** and examine its contents. Get the [explanation here](https://pwafire.org/developer/pwa/started/#sw-config-for-node)
 
-<p><b>NOTE : </b>Checkout for the latest <b>workbox</b> <a href="https://developers.google.com/web/tools/workbox/guides/get-started#importing_workbox" target="_blank" rel="noopener">release here</a> and update the <b>importScripts</b> below say <b>3.4.1</b> to <b>3.4.2</b> if it's available and update the <b>service-worker.js<b? file in the <b>src</b> folder.</p>
+<p><b>NOTE : </b>Checkout for the latest <b>workbox</b> <a href="https://developers.google.com/web/tools/workbox/guides/get-started#importing_workbox" target="_blank" rel="noopener">release here</a> and update the <b>importScripts</b> below say <b>3.4.1</b> to <b>3.4.2</b> if it's available and update the <b>service-worker.js</b> file in the <b>src</b> folder.</p>
 
 Once you have started the server, open the browser and navigate to http://localhost:8081/ to view the app. The app is a simple one page progressive web app which just showcases a working PWA Fire App.
 
