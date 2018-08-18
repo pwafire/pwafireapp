@@ -5,7 +5,7 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js')
   
 if (workbox) {
-    console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🎉`);
+    console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🐹`);
     workbox.precaching.precacheAndRoute([]);
     
    /*  cache images in the e.g others folder; edit to other folders you got 
@@ -56,7 +56,7 @@ workbox.skipWaiting();
 workbox.clientsClaim();
     
 } else {
-    console.log(`Oops! Workbox didn't load `);
+    console.log(`Oops! Workbox didn't load 👺`);
 }
 
   
