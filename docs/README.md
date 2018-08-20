@@ -101,7 +101,7 @@ Find demo [PWA Fire App here](https://pwafireapp.firebaseapp.com)
 
 ```
 
-5. To make even your progressive web app discoverable and your pages built with best web practices, configure your pages as in the **head** tag of the default **index.html** in the **src** folder.
+5. To make your progressive web app more discoverable and your pages built with best web practices, configure your pages as in the **head** tag of the default **index.html** in the **src** folder.
 
 ### [Build your progressive web app]()
 
