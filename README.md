@@ -6,7 +6,7 @@ Project [PWA Fire Bundle](https://github.com/mayeedwin/pwafire) is an open sourc
 
 ### [What is PWA Fire App?](https://github.com/mayeedwin/pwafireapp)
 
-Progressive Web App starter App which with all [progressive web app best practices](https://developers.google.com/web/progressive-web-apps/checklist) and packaged ready for PWA Fire Bundle 4.0.0 use.
+Progressive Web App starter App designed with  [progressive web app best practices](https://developers.google.com/web/progressive-web-apps/checklist) and packaged ready for your PWA project
 
 It has two versions; 
 
