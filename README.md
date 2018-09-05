@@ -14,6 +14,8 @@ It has two versions;
 
 2. For project without any build process; [config guide is here](https://pwafire.org/developer/pwa/started/)
 
+***
+
 ### [App Structure]()
 
 Here is the basic skeleton for **PWA Fire App**  that each of the two starter PWA Kits will conform to:
@@ -68,8 +70,12 @@ file as in [this codelab here](https://pwafire.org/developer/pwa/started/#sw-con
 
 ```
 
+***
+
 #### [Getting started](https://pwafire.org/developer/codelabs/cloud-firestore-for-web)
 Get started on how to set up PWA Fire App [ in this setup guide ](https://github.com/mayeedwin/pwafireapp/tree/master/docs).
+
+***
 
 #### [Engage us](https://twitter.com/pwafire)
 Donate a star, like, follow and contribute in any way. If you use [PWA Fire Developer Resources](https://pwafire.org/developer), kindly let us know. JUST simply [Tweet us](https://twitter.com/pwafire).
