@@ -1,4 +1,4 @@
-### [Overview](https://pwafire.org/app) ![PWA Fire App](https://github.com/mayeedwin/pwafireapp/blob/master/app/src/images/others/pwafireapp.png)
+### ![PWA Fire App](https://github.com/mayeedwin/pwafireapp/blob/master/app/src/images/others/pwafireapp.png) [Overview](https://pwafire.org/app)
 
 Before we get started; let us make sure everything is ready and we have all tools needed.
 
