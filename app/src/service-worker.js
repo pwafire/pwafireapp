@@ -1,8 +1,9 @@
+
 // authored by Maye Edwin : https://twitter.com/MayeEdwin1
 // Add offline properties, push notification, web share, web payments, etc
 // pwafire 4.0.0
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js')
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js');
   
 if (workbox) {
     console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🐹`);
@@ -46,12 +47,15 @@ if (workbox) {
           statuses: [0, 200],
         }),
       ],
-    }),
-  ); 
+    })
+  );
 
   // add offline analytics 
   workbox.googleAnalytics.initialize(); 
 
+/* Install a new service worker and have it update 
+and control a web page as soon as possible
+*/
 
 workbox.skipWaiting();
 workbox.clientsClaim();
@@ -60,4 +64,3 @@ workbox.clientsClaim();
     console.log(`Oops! Workbox didn't load 👺`);
 }
 
-  
