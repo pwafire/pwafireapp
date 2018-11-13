@@ -1,5 +1,5 @@
 
-// authored by Maye Edwin : https://twitter.com/MayeEdwin1
+// Authored by Maye Edwin : https://twitter.com/MayeEdwin1
 // Add offline properties, push notification, web share, web payments, etc
 // pwafire 4.0.0
 
@@ -57,24 +57,9 @@ if (workbox) {
 and control a web page as soon as possible
 */
 
-self.addEventListener('message', (event) => {
-  if (!event.data){
-    return;
-  }
-
-  switch (event.data) {
-    case 'skipWaiting':
-      self.skipWaiting();
-      break;
-    default:
-      // NOOP
-      break;
-  }
-});
-
 workbox.skipWaiting();
 workbox.clientsClaim();
     
 } else {
-    console.log(`Oops! Workbox didn't load 👺`);
+    console.log("Oops! Workbox didn't load 👺");
 }
