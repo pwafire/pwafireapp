@@ -14,7 +14,7 @@ if (workbox) {
     */
    workbox.routing.registerRoute(
     /(.*)others(.*)\.(?:png|gif|jpg)/,
-    workbox.strategies.cacheFirst({
+    workbox.strategies.networkFirst({
       cacheName: 'images',
       plugins: [
         new workbox.expiration.Plugin({
@@ -40,7 +40,7 @@ if (workbox) {
    // cache google fonts
   workbox.routing.registerRoute(
     new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
-    workbox.strategies.cacheFirst({
+    workbox.strategies.networkFirst({
       cacheName: 'google-fonts',
       plugins: [
         new workbox.cacheableResponse.Plugin({
