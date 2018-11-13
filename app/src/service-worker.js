@@ -57,10 +57,24 @@ if (workbox) {
 and control a web page as soon as possible
 */
 
+self.addEventListener('message', (event) => {
+  if (!event.data){
+    return;
+  }
+
+  switch (event.data) {
+    case 'skipWaiting':
+      self.skipWaiting();
+      break;
+    default:
+      // NOOP
+      break;
+  }
+});
+
 workbox.skipWaiting();
 workbox.clientsClaim();
     
 } else {
     console.log(`Oops! Workbox didn't load 👺`);
 }
-
