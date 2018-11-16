@@ -2,5 +2,4 @@
 *.cache
 build/
 *.log
-node_modules/
-app/node_modules/.bin/copyfiles
+app/node_modules/
