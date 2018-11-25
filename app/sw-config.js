@@ -11,6 +11,9 @@ module.exports = {
     "images/*.jpg",
     "images/*.gif",
     "images/icons/*.png",
+    /* add url for other directories in the format 
+    "directory/*.html" as shown below ; *directory*
+     could be any name eg *pages* */
     "pages/*.html",
     "assets/js/*.js",
     "assets/css/*.css",
