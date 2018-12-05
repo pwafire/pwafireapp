@@ -1,4 +1,4 @@
-### [PWA Fire App *Beta*](https://pwafire.org/developer/app/) ![PWA Fire App]
+### [PWA Fire App *Beta*](https://pwafire.org/developer/app/)
 
 Project [PWA Fire Bundle](https://github.com/mayeedwin/pwafire) is an open source javascript and json bundle that allows you to convert your existing website into a progressive web app or build one in a few.
 
