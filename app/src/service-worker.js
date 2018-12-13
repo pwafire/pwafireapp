@@ -23,7 +23,7 @@ if (workbox) {
         })
       ]
     })
-  );
+  ); 
     /* Make your JS and CSS ⚡ fast by returning the assets from the cache, 
   while making sure they are updated in the background for the next use.
   */
