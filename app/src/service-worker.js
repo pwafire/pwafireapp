@@ -18,7 +18,7 @@ if (workbox) {
       cacheName: 'images',
       plugins: [
         new workbox.expiration.Plugin({
-          maxEntries: 50,
+          maxEntries: 50, // max number of images to cache
           maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
         })
       ]
@@ -34,6 +34,11 @@ if (workbox) {
     workbox.strategies.staleWhileRevalidate({
       // use a custom cache name
       cacheName: 'assets',
+         plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 20,
+      }),
+      ]
     })
   );
 
