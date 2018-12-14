@@ -71,7 +71,7 @@ if ('share' in navigator) {
   // divNotSup.classList.toggle('hidden', false);
 
   // Add the snackbar to show no support [2]
-  document.getElementById("snackbar").innerHTML = "<code>navigator.share</code> is not supported in this browser, try sharing from another app instead.";
+  document.getElementById("snackbar").innerHTML = "<code>navigator.share</code> is not supported in this browser, already in chrome for android 70+";
   var snackbar = document.getElementById("snackbar");
   // Add the "show" class to div
   snackbar.className = "show";
