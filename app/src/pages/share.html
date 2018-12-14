@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- end of service worker -->
+    <title>PWA Fire App</title>
+    <meta name="theme-color" content="#fff" />
+    <!-- add web manifest -->
+    <link rel="manifest" href="..//manifest.json">
+    <!-- add your web app icon url -->
+    <link rel="shortcut icon" sizes="32x32" href="https://pwafire.org/images/icons/pwafire32white.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- add canonical url -->
+    <link rel="canonical" href="https://pwafireapp.firebaseapp.com/pages/share.html">
+    <!-- add twitter meta data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="Web App Name">
+    <meta name="twitter:creator" content="@yourhandle">
+    <meta name="twitter:title" content="Web App Title">
+    <meta name="twitter:description" content="Web App or Page Description">
+    <meta name="twitter:image" content="images/sample.jpg">
+    <meta name="keywords" content="Maye Edwin, service worker, workbox, google developers, technology, PWAFire, javascript, json, web, progressive web apps, pwa" />
+    <meta name="author" content="Maye Edwin" />
+    <!-- add facebook sharing meta data -->
+    <meta property="og:title" content="Web App Title">
+    <meta property="og:site_name" content="Web App Name">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Web App or Page Description">
+    <meta property="og:image" content="images/sample.png">
+    <meta property="og:image:type" content="image/png" />
+    <!-- add web app styles; below is just an example; delete it -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- add more of your fonts + font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--
+     Web Share Target Handler
+    -->
+    <h1>
+        Web Share Target Handler
+      </h1>
+      <p>
+        <b>href:</b> <code><span id="href"></span></code>
+      </p>
+      <p>
+        <b>Query String Parameters:</b><br>
+        <b>title:</b> <code><span id="title"></span></code><br>
+        <b>text:</b> <code><span id="text"></span></code><br>
+        <b>url:</b> <code><span id="url"></span></code>
+      </p>  
+      <p>
+        Check out the <a href="https://glitch.com/edit/#!/web-share">source</a>
+        for this sample, or
+        <a href="https://glitch.com/edit/#!/remix/web-share">remix it</a> on Glitch.
+      </p>
+      <script>
+        window.addEventListener('DOMContentLoaded', () => {
+          document.getElementById('href').textContent = window.location.href;
+          const parsedUrl = new URL(window.location);
+          document.getElementById('title').textContent = parsedUrl.searchParams.get('title');
+          document.getElementById('text').textContent = parsedUrl.searchParams.get('text');
+          document.getElementById('url').textContent = parsedUrl.searchParams.get('url');
+        });
+      </script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

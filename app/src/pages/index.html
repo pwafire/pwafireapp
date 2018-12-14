@@ -45,7 +45,35 @@ just a demo to show how pwafireapp works
         <p> This page could be anything of other pages 😜</p>
         <p><a href="https://pwafire.org/developer/app">Get started here</a></p>
         <p><a href="../"><i class="fas fa-arrow-circle-left"></i> Home Page</a></p>
+            
+    <!--
+    Install/Share buttons, disabled by default 
+    -->
+    <div id="installContainer">
+        <button id="butShare" type="button" disabled>
+        Share
+      </button>
+        <button id="butInstall" type="button" disabled>
+          Install
+        </button>
+      </div>
+
+      <p id="shareNotSupported" class="hidden">
+        <code>navigator.share</code> is not supported in this
+        browser, try sharing from another app instead.
+      </p>
+
+       
+    <p id="requireHTTPS" class="hidden">
+        <b>STOP!</b> This page <b>must</b> be served over HTTPS.
+        Please <a>reload this page via HTTPS</a>.
+      </p>
+
     </div>
+    
+    </div>
+
+    
     <!--
 your web app
 -->
