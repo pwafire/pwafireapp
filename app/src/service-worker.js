@@ -36,6 +36,7 @@ if (workbox) {
       cacheName: 'assets',
          plugins: [
       new workbox.expiration.Plugin({
+        // max number of items to be cached
         maxEntries: 20,
       }),
       ]
