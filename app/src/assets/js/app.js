@@ -49,7 +49,7 @@ if ('share' in navigator) {
     e.preventDefault();
     const shareOpts = {
       title: 'PWA Fire App',
-      text: 'Starter Web App Designed With Progressive Web App Best Practices And Packaged Ready For Your PWA Project',
+      text: 'Starter Web App Designed With Progressive Web App Best Practices And Packaged Ready For Your PWA Project #pwafireapp #pwafiredev #pwafire #pwa',
       url: 'https://pwafire.org/developer/app/',
     };
     navigator.share(shareOpts)
