@@ -2,6 +2,9 @@
 
 Project [PWA Fire Bundle](https://github.com/mayeedwin/pwafire) is an open source javascript and json bundle that allows you to convert your existing website into a progressive web app or build one in a few.
 
+
+![PWA Fire App 100% Audit Pass](https://raw.githubusercontent.com/mayeedwin/pwafireapp/master/.github/images/pwafireappreport.png)
+
 ***
 
 ### [What is PWA Fire App?](https://github.com/mayeedwin/pwafireapp)
