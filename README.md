@@ -14,6 +14,8 @@ It has two versions;
 
 2. For project without any build process; [config guide is here](https://pwafire.org/developer/pwa/started/)
 
+- [PWA Fire App Demo App](https://pwafireapp.firebaseapp.com/) has a 100% Audit Pass for Progressive Web App, Best Practices, Perfomance, Accessbility and SEO as shown in the [.audit dir here](https://github.com/mayeedwin/pwafireapp/tree/master/.audit)
+
 ***
 
 ### [App Structure]()
