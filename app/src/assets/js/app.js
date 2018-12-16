@@ -2,23 +2,23 @@
  Your Javascript
   */
 
-console.log("I am a beta version of pwafireapp 🐹");
+console.log("I am a Beta version of pwafireapp 🐹");
 
 const divResult = document.getElementById('result');
 const divInstall = document.getElementById('installContainer');
-const butInstall = document.getElementById('butInstall');
-const butShare = document.getElementById('butShare');
+const buttonInstall = document.getElementById('buttonInstall');
+const buttonShare = document.getElementById('buttonShare');
 
 window.addEventListener('beforeinstallprompt', (event) => {
   console.log('👍', 'beforeinstallprompt', event);
   // Stash the event so it can be triggered later.
   window.deferredPrompt = event;
   // Remove the 'hidden' class from the install button container
-  butInstall.removeAttribute('disabled');
+  buttonInstall.removeAttribute('disabled');
 });
 
-butInstall.addEventListener('click', () => {
-  console.log('👍', 'butInstall-clicked');
+buttonInstall.addEventListener('click', () => {
+  console.log('👍', 'buttonInstall-clicked');
   const promptEvent = window.deferredPrompt;
   if (!promptEvent) {
     // The deferred prompt isn't available.
@@ -33,19 +33,19 @@ butInstall.addEventListener('click', () => {
     // prompt() can only be called once.
     window.deferredPrompt = null;
     // Hide the install button.
-    butInstall.setAttribute('disabled', true);
+    buttonInstall.setAttribute('disabled', true);
   });
 });
 
 window.addEventListener('appinstalled', (event) => {
-  console.log('👍', 'appinstalled', event);
+  console.log('👍', 'app successfully installed', event);
 });
 
 if ('share' in navigator) {
   console.log('👍', 'navigator.share is supported');
-  butShare.removeAttribute('disabled');
-  butShare.addEventListener('click', (e) => {
-    console.log('👍', 'butShare-clicked', e);
+  buttonShare.removeAttribute('disabled');
+  buttonShare.addEventListener('click', (e) => {
+    console.log('👍', 'buttonShare-clicked', e);
     e.preventDefault();
     const shareOpts = {
       title: 'PWA Fire App',
@@ -76,7 +76,7 @@ if ('share' in navigator) {
   // Add the "show" class to div
   snackbar.className = "show";
   // After 5 seconds, remove the show class from div
-  setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 5000);
+  setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
   // divResult.classList.toggle('hidden', true);
 }
 
