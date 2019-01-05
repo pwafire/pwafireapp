@@ -1,57 +1,30 @@
 
 // Authored by Maye Edwin : https://twitter.com/MayeEdwin1
-// Add custom cache strategies and routing methods
+// Add offline properties, push notification, web share, web payments, etc
 // pwafire 4.0.0
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js');
-
+  
 if (workbox) {
-  console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🐹`);
-  workbox.precaching.precacheAndRoute([]);
-
-  /* cache images in the e.g others folder; edit to other folders you got 
+    console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🐹`);
+    workbox.precaching.precacheAndRoute([]);
+    
+   /*  cache images in the e.g others folder; edit to other folders you got 
    and config in the sw-config.js file
-
-   -- notes --
-   if you are using *networkFirst* cache strategies, 
-   they should come first as in this app
     */
-  workbox.routing.registerRoute(
-    /(.*)others(.*)\.(?:|svg|png|gif|jpg)/,
+   workbox.routing.registerRoute(
+    /(.*)others(.*)\.(?:png|gif|jpg)/,
     workbox.strategies.networkFirst({
-      cacheName: 'images-cache',
+      cacheName: 'images',
       plugins: [
         new workbox.expiration.Plugin({
-          maxEntries: 50, // max number of images to cache
-          maxAgeSeconds: 7 * 24 * 60 * 60, // 7 Days
+          maxEntries: 50,
+          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
         })
       ]
     })
   );
-
-  /* cache resources from a specific subdirectory
-    -- notes --
-    add url for other sub-directories that a user visits depending
-    on his or her needs "/subdirectory/" as shown below ; *subdirectory*
-    could be any name eg *sports* if a user shows interest in *sports* categ of a news app; 
-    this means all .html articles in the *sports* route that the user reads, get cached 
-   */
-  workbox.routing.registerRoute(
-    new RegExp('/sports/'),
-    workbox.strategies.staleWhileRevalidate({
-      // use a custom cache name
-      cacheName: 'sports-cache',
-      plugins: [
-        new workbox.expiration.Plugin({
-          // max number of items to be cached
-          maxEntries: 20,
-          maxAgeSeconds: 7 * 24 * 60 * 60, // 7 Days
-        }),
-      ]
-    })
-  );
-
-  /* Make your JS and CSS ⚡ fast by returning the assets from the cache, 
+    /* Make your JS and CSS ⚡ fast by returning the assets from the cache, 
   while making sure they are updated in the background for the next use.
   */
   workbox.routing.registerRoute(
@@ -60,17 +33,11 @@ if (workbox) {
     // use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // use a custom cache name
-      cacheName: 'assets-cache',
-      plugins: [
-        new workbox.expiration.Plugin({
-          // max number of items to be cached
-          maxEntries: 20,
-        }),
-      ]
+      cacheName: 'assets',
     })
   );
 
-  // cache google fonts
+   // cache google fonts
   workbox.routing.registerRoute(
     new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
     workbox.strategies.networkFirst({
@@ -84,15 +51,15 @@ if (workbox) {
   );
 
   // add offline analytics 
-  workbox.googleAnalytics.initialize();
+  workbox.googleAnalytics.initialize(); 
 
-  /* Install a new service worker and have it update 
-  and control a web page as soon as possible
-  */
+/* Install a new service worker and have it update 
+and control a web page as soon as possible
+*/
 
-  workbox.skipWaiting();
-  workbox.clientsClaim();
-
+workbox.skipWaiting();
+workbox.clientsClaim();
+    
 } else {
-  console.log("Oops! Workbox didn't load 👺");
+    console.log("Oops! Workbox didn't load 👺");
 }

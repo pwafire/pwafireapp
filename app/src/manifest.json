@@ -7,14 +7,6 @@
     "name": "PWA Fire App",
     "description": "description or purpose of your progressive web app",
     "lang": "en-US",
-    "share_target": {
-      "action": "index.html",
-      "params": {
-        "title": "title",
-        "text": "text",
-        "url": "url"
-      }
-    },
 "icons": [
     {
       "src": "images/icons/icon-72x72.png",
