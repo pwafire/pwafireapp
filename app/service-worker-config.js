@@ -8,13 +8,14 @@ module.exports = {
     e.g cache all .css files in the root folder
     */
     "index.html",
+    "manifest.json",
     "images/home/*.gif",
-    /* Pre-cache app assets i.e css, scss, js
-    */  
+    // Pre-cache the default app icon needed for app installation
+    "images/icons/icon-144x144.png",
+    // Pre-cache app assets i.e css, scss, js
     "assets/js/*.js",
     "assets/css/*.css",
     "assets/scss/*.scss"
-   
     ],
     /* The path and filename of the service worker file that will 
     be created by the build process
