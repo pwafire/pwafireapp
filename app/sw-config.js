@@ -1,27 +1,33 @@
 module.exports = {
-    "globDirectory": "build/", // The base directory you wish to match globPatterns against, 
-    // relative to the current working directory.
+    /* The base directory you wish to match globPatterns against, 
+     relative to the current working directory.
+    */
+    "globDirectory": "build/",
     "globPatterns": [
-    // edit to add all file to cache; configure for your project below
-    // e.g cache all .css files in the root folder
+    /* Edit to add all file to cache; configure for your project as shown below 
+    e.g cache all .css files in the root folder
+    */
     "index.html",
-    "manifest.json",
-    "images/*.png",
-    "images/*.svg",
-    "images/*.jpg",
-    "images/*.gif",
-    "images/icons/*.png",
-    "pages/*.html",
+    "images/home/*.gif",
+    /* Pre-cache app assets i.e css, scss, js
+    */  
     "assets/js/*.js",
     "assets/css/*.css",
     "assets/scss/*.scss"
+   
     ],
-    // The path and filename of the service worker file that will be created by the build process.
+    /* The path and filename of the service worker file that will 
+    be created by the build process
+    */
     "swSrc": "src/service-worker.js", 
-    // The path to the source service worker file that can contain your own customized code,
+    /* The path to the source service worker file that can contain 
+    your own customized code e.g cache strategies for different app resources
+    */
     "swDest": "build/service-worker.js", 
-    // In addition to containing a match for injectionPointRegexp.
+    /* In addition to containing a match for 
+    injectionPointRegexp
+    */
     "globIgnores": [
-    "../sw-config.js"
+    "../service-worker-config.js"
     ]
     };
