@@ -50,7 +50,7 @@ function showRefreshUI(registration) {
   }
   
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('../service-worker.js')
+    navigator.serviceWorker.register('../../service-worker.js')
     .then(function (registration) {
         // Track updates to the Service Worker.
       if (!navigator.serviceWorker.controller) {

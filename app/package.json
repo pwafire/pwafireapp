@@ -2,7 +2,7 @@
   "author": "Maye Edwin",
   "scripts": {
     "copy": "copyfiles -u 1 src/**/**/* src/**/* src/* build",
-    "build": "npm run copy && workbox injectManifest sw-config.js",
+    "build": "npm run copy && workbox injectManifest service-worker-config.js",
     "start": "node server.js"
   },
   "dependencies": {

@@ -1,109 +1,248 @@
 /** replace or + add your css**/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-.header-pwafire
-{
-    margin: 0 auto;
-    text-align: center;
-    width: 70%;
-    padding-top: 50px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-.image-pwafire
-{
-    width: 150px;
+
+body {
+  display: block;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-h3{
-    font-weight: 500;
+.navbar {
+  display: flex;
+  background: #fff;
+  border-bottom: 0.75px solid #c7c0c0;
+  padding: 15px;
+  justify-content: center;
+  position: fixed;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.main-div {
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+}
+
+.app-logo {
+  width: 50px;
+  margin-top: 75px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+#title
+{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#desc
+{
+  text-align: center;
+  text-decoration: wavy;
+  text-rendering: optimizeSpeed;
+  flood-color: #777;
 }
 
 .hidden {
-    display: none !important;
-  }
-
-.share-par
-{
-    display: none !important;   
+  display: none !important;
 }
-  
-  button[disabled] {
-    opacity: 0.5;
-    border: 1px solid rgba(74, 20, 140, 0.5) !important;
-  }
-  
-  #installContainer {
-    bottom: 1em;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  #installContainer button {
-    background-color: inherit;
-    border: 1px solid #c7c0c0;
-    font-size: 1em;
-    padding: 0.75em;
-  }
-  
-  #buttonInstall {
-    margin-left: 1em;
-  }
+
+.share-par {
+  display: none !important;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  border: 1px solid rgba(74, 20, 140, 0.5) !important;
+}
+
+#installContainer {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+#installContainer button {
+  background-color: inherit;
+  border: 1px solid #c7c0c0;
+  font-size: 1em;
+  padding: 0.60em;
+  border-radius: 25px;
+  width: 150px;
+}
+
+#customButton {
+  background-color: inherit;
+  border: 1px solid #c7c0c0;
+  font-size: 0.75em;
+  padding: 0.60em;
+  border-radius: 25px;
+  width: 100px;
+  display: inline-block;
+  margin: 7px;
+}
+
+a 
+{
+  text-decoration: none;
+}
+.navigate {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#buttonInstall {
+  margin-left: 1em;
+}
 
 
-        /* snackbar.css by 
+/* snackbar.css by 
         https://pwafire.org/developer/  */
 
-        /* The snackbar - position it at the bottom and in the middle 
+/* The snackbar - position it at the bottom and in the middle 
         of the screen */
 
- 
+
 #snackbar {
-    visibility: hidden;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 8px;
-    position: fixed;
-    z-index: 1;
-    bottom: 30px;
-    font-size: 14px;
-    width: 325px;
-    margin: 0 auto;
+  visibility: hidden;
+  background-color: rgb(68, 66, 66);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 8px;
+  z-index: 1;
+  bottom: 30px;
+  font-size: 14px;
+  width: 295px;
+  display: flex;
+  margin: 0 auto;
 }
-        
-  
-        /* Show the snackbar when clicking on a button 
+
+
+/* Show the snackbar when clicking on a button 
         (class added with JavaScript) */
 
-        #snackbar.show {
-        visibility: visible; /* Show the snackbar */
-  
-        /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+#snackbar.show {
+  visibility: visible;
+  /* Show the snackbar */
+
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
         However, delay the fade out process for 2.5 seconds */
 
-        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-        animation: fadein 0.5s, fadeout 0.5s 2.5s;
-        }
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  text-align: center;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.footer
+{
+  display: block;
+  background: inherit;
+  border-bottom: 0.50px solid #c7c0c0;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.latest-news {
+  align-items: center;
+  text-align: left;
+  margin: auto;
+  padding: 1px;
+  overflow-y: scroll;
+  height: 225px;
+  border-radius: 10px;
   
-        /* Animations to fade the snackbar in and out */
-        @-webkit-keyframes fadein {
-        from {bottom: 0; opacity: 0;} 
-        to {bottom: 30px; opacity: 1;}
-        }
-  
-        @keyframes fadein {
-        from {bottom: 0; opacity: 0;}
-        to {bottom: 30px; opacity: 1;}
-        }
-  
-        @-webkit-keyframes fadeout {
-        from {bottom: 30px; opacity: 1;} 
-        to {bottom: 0; opacity: 0;}
-        }
-  
-        @keyframes fadeout {
-        from {bottom: 30px; opacity: 1;}
-        to {bottom: 0; opacity: 0;}
-      }
-       
+}
+.latest-news h2 {
+  font-size: 16px;
+  font-weight: 500;
+ }
+ .latest-news p {
+  font-size: 14px;
+ }
+
+
+article {
+
+  border-bottom: 0.50px solid #c7c0c0;
+
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(113, 122, 116, 0.4); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgba(113, 122, 116, 0.4); 
+}

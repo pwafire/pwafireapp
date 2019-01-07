@@ -33,14 +33,14 @@ if (workbox) {
     -- notes --
     add url for other sub-directories that a user visits depending
     on his or her needs "/subdirectory/" as shown below ; *subdirectory*
-    could be any name eg *sports* if a user shows interest in *sports* categ of a news app; 
-    this means all .html articles in the *sports* route that the user reads, get cached 
+    could be any name eg *latest* if a user shows interest in *latest* categ of a news app; 
+    this means all .html articles in the *latest* route that the user reads, get cached 
    */
   workbox.routing.registerRoute(
-    new RegExp('/sports/'),
+    new RegExp('/latest/'),
     workbox.strategies.staleWhileRevalidate({
       // use a custom cache name
-      cacheName: 'sports-cache',
+      cacheName: 'latest-cache',
       plugins: [
         new workbox.expiration.Plugin({
           // max number of items to be cached

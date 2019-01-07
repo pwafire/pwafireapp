@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- register service worker -->
-    <script>
-        if ('serviceWorker' in navigator) {
+    <head>
+        <!-- register service worker -->
+        <script>
+            if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('/service-worker.js')
                     .then(function() {
@@ -13,97 +13,126 @@
             });
         }
     </script>
-    <!-- end of service worker -->
-    <title>PWA Fire App</title>
-    <meta name="Description" content="Author : Maye Edwin, 
+        <!-- end of service worker -->
+        <title>PWA Fire App</title>
+        <meta name="Description" content="Author : Maye Edwin, 
     Publisher : PWAFire.Org, Category: Web, Language : Javascript, CSS, HTML, 
     Availability : Open Source">
-    <meta name="theme-color" content="#fff" />
-    <!-- add web manifest -->
-    <link rel="manifest" href="/manifest.json">
-    <!-- add your web app icon url -->
-    <link rel="shortcut icon" sizes="32x32" href="https://pwafire.org/images/icons/pwafire32white.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- add canonical url -->
-    <link rel="canonical" href="https://pwafireapp.firebaseapp.com/">
-    <!-- add twitter meta data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="Web App Name">
-    <meta name="twitter:creator" content="@yourhandle">
-    <meta name="twitter:title" content="Web App Title">
-    <meta name="twitter:description" content="Web App or Page Description">
-    <meta name="twitter:image" content="images/sample.jpg">
-    <meta name="keywords" content="Maye Edwin, service worker, workbox, google developers, technology, PWAFire, javascript, json, web, progressive web apps, pwa" />
-    <meta name="author" content="Maye Edwin" />
-    <!-- add facebook sharing meta data -->
-    <meta property="og:title" content="Web App Title">
-    <meta property="og:site_name" content="Web App Name">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Web App or Page Description">
-    <meta property="og:image" content="images/sample.png">
-    <meta property="og:image:type" content="image/png" />
-    <!-- add web app styles; below is just an example; delete it -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- add more of your fonts + font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-</head>
+        <meta name="theme-color" content="#fff" />
+        <!-- add web manifest -->
+        <link rel="manifest" href="/manifest.json">
+        <!-- add your web app icon url -->
+        <link rel="shortcut icon" sizes="32x32" href="https://pwafire.org/images/icons/pwafire32white.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- add canonical url -->
+        <link rel="canonical" href="https://pwafireapp.firebaseapp.com/">
+        <!-- add twitter meta data -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:site_name" content="Web App Name">
+        <meta name="twitter:creator" content="@yourhandle">
+        <meta name="twitter:title" content="Web App Title">
+        <meta name="twitter:description" content="Web App or Page Description">
+        <meta name="twitter:image" content="images/sample.jpg">
+        <meta name="keywords" content="Maye Edwin, service worker, workbox, google developers, technology, PWAFire, javascript, json, web, progressive web apps, pwa" />
+        <meta name="author" content="Maye Edwin" />
+        <!-- add facebook sharing meta data -->
+        <meta property="og:title" content="Web App Title">
+        <meta property="og:site_name" content="Web App Name">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Web App or Page Description">
+        <meta property="og:image" content="images/sample.png">
+        <meta property="og:image:type" content="image/png" />
+        <!-- add web app styles; below is just an example; delete it -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- add more of your fonts + font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+            crossorigin="anonymous">
+    </head>
 
-<body>
-    <!--
+    <body>
+        <!--
     just a demo to show how pwafireapp works
     -->
-    <div class="header-pwafire">
-        <img class="image-pwafire" src="images/home/pwafireapp-frog-icon.gif" alt="pwafireapp-logo">
-        <h3> Yey! I am <code>Beta</code> version of PWA Fire App </h3>
-        <p> Have fun with me! Happy code dance 💃💃</p>
-        <p> New Update 1 😋 😎 </p>
-        <p> Man's got to code better and relaxed 😋 😎 </p>
-        <p><a href="https://pwafire.org/developer/app" target="_blank" rel="noopener">Get started here <i class="fas fa-rocket"></i></a></p>
-        <p><a href="sports/">Next Page <i class="fas fa-arrow-circle-right"></i></a></p>
-        
-    <!--
+        <nav class="navbar">
+            <div class="header">
+                Welcome to PWA Fire App
+            </div>
+        </nav>
+
+        <div class="main-div">
+            <img class="app-logo" src="images/home/pwafireapp-frog-icon.gif" alt="pwafireapp-logo">
+            <h1 id="title">
+                I am <code>Beta</code> version
+            </h1>
+            <p id="desc">
+                Starter Web App Designed With Progressive Web App Best Practices<br> And
+                Packaged Ready For Your <a href="">PWA Project</a>
+            </p>
+
+            <h1 id="title">
+                Getting set up?
+            </h1>
+            <p id="desc">
+                You need basic HTML, CSS and javascript skills <br>Have fun with me!
+                Man's got to code better and relaxed 😋 😎
+            </p>
+
+            <div class="navigate">
+                <p>
+                    <a id="customButton" href="https://pwafire.org/developer/app" target="_blank" rel="noopener">Get
+                        Started <i class="fas fa-rocket"></i></a></p>
+                <p>
+                    <a id="customButton" href="latest/">Next Page <i class="fas fa-arrow-circle-right"></i></a>
+                </p>
+            </div>
+
+            <!--
     Install/Share buttons, disabled by default 
     -->
-    <div id="installContainer">
-        <button id="buttonShare" type="button" disabled>
-        Share
-      </button>
-        <button id="buttonInstall" type="button" disabled>
-          Install
-        </button>
-      </div>
+            <div id="installContainer">
+                <button id="buttonShare" type="button" disabled>
+                    Share
+                </button>
+                <button id="buttonInstall" type="button" disabled>
+                    Install
+                </button>
+            </div>
 
 
-      <!--
+            <!--
           <p id="shareNotSupported" class="hidden">
         <code>navigator.share</code> is not supported in this
         browser, try sharing from another app instead.
       </p>
       -->
-       
-    <p id="requireHTTPS" class="hidden">
-        This page <b>must</b> be served over HTTPS. Please <a>reload this page via HTTPS</a>.
-      </p>
 
-    </div>
+            <p id="requireHTTPS" class="hidden">
+                This page <b>must</b> be served over HTTPS. Please <a>reload this page via HTTPS</a>.
+            </p>
 
-    <!--
+        </div>
+
+        <!--
     your web app
     -->
 
-    <!-- add web app scripts; below is just an 
+        <!-- add web app scripts; below is just an 
     example; delete it -->
 
-    <footer>
-        <!-- 
+        <footer class="footer">
+            <p>
+                v1.0.0-beta // <a href="https://pwafire.org" target="_blank" rel="noopener">pwafire.org</a>
+                // latest on <a href="https://github.com/mayeedwin/pwafireapp/releases" target="_blank" rel="noopner">Github</a>
+            </p>
+            <!-- 
             add snackbar
          -->
-        <div id="snackbar"></div>
+            <div id="snackbar"></div>
 
-    </footer>
-    
-    <script src="assets/js/app.js"></script>
-</body>
+        </footer>
+
+        <script src="assets/js/app.js"></script>
+    </body>
 
 </html>
