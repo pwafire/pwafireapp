@@ -23,7 +23,7 @@ body {
 .main-div {
   margin: 0 auto;
   text-align: center;
-  width: 75%;
+  width: 65%;
 }
 
 .app-logo {
@@ -122,7 +122,7 @@ a
   bottom: 30px;
   font-size: 14px;
   width: 295px;
-  display: flex;
+  display: block;
   margin: 0 auto;
 }
 
@@ -209,14 +209,105 @@ a
   overflow-y: scroll;
   height: 225px;
   border-radius: 10px;
-  
+  width: 75%;
 }
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .main-div {
+      margin: 0 auto;
+      text-align: center;
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .latest-news {
+    width: auto;
+    margin: 10px;
+  }
+  .desktop
+{
+  display: none;
+}
+.mobile{
+  display: block;
+}
+}
+
+.mobile{
+  display: none;
+}
+/* Portrait and Landscape */
+@media only screen and (-Webkit-min-device-pixel-ratio:1.5),
+ only screen and (-moz-min-device-pixel-ratio:1.5),
+ only screen and (min-device-pixel-ratio:1.5) {
+
+  .main-div {
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.header-intro
+{
+  padding: 5px;
+  display: block;
+}
+
+.latest-news {
+  width: auto;
+  margin: 10px;
+}
+
+.desktop
+{
+  display: none;
+}
+.mobile{
+  display: block;
+}
+
+#installContainer button {
+  width: 120px;
+}
+
+#snackbar {
+width: auto;
+}
+    
+ }
+
+ /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  .latest-news {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#snackbar {
+  width: 350px;
+}
+
+}
+
+
 .latest-news h2 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
  }
  .latest-news p {
-  font-size: 14px;
+  font-size: 13px;
  }
 
 
@@ -228,7 +319,7 @@ article {
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 7px;
 }
 
 /* track */
