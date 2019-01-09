@@ -111,3 +111,12 @@ self.addEventListener('message', (event) => {
 });
 
 */
+
+// badge API
+
+const unreadCount = 5;
+window.Badge.set(unreadCount);
+
+self.addEventListener('sync', () => {
+  self.Badge.set(getUnreadCount());
+});

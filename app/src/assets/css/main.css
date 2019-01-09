@@ -89,6 +89,24 @@ button[disabled] {
   margin: 7px;
 }
 
+*, ::after, ::before {
+  box-sizing: unset;
+}
+
+/** set what happens on focus **/
+#customButton:focus {
+  outline: 0px dotted;
+  color: #0dd3ff;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+button:focus {
+  outline: 0px dotted;
+  color: #0dd3ff;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+
 a 
 {
   text-decoration: none;
@@ -212,6 +230,13 @@ a
   width: 75%;
 }
 
+.post-article {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 75%;
+  margin: 0 auto;
+}
+
 /* Portrait and Landscape */
 @media screen 
   and (device-width: 360px) 
@@ -227,6 +252,7 @@ a
   .latest-news {
     width: auto;
     margin: 10px;
+    height: 400px;
   }
   .desktop
 {
@@ -234,6 +260,10 @@ a
 }
 .mobile{
   display: block;
+}
+
+.post-article {
+  width: auto;
 }
 }
 
@@ -262,6 +292,7 @@ a
 .latest-news {
   width: auto;
   margin: 10px;
+  height: 400px;
 }
 
 .desktop
@@ -277,6 +308,10 @@ a
 }
 
 #snackbar {
+width: auto;
+}
+
+.post-article {
 width: auto;
 }
     

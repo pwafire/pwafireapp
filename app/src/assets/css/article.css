@@ -1,0 +1,52 @@
+/*add some styles*/
+form {
+    margin-top: 10px;
+  }
+  
+  .row {
+    margin: 25px 0; /* need some nice spacing here */
+    position: relative; /* this one is important */
+  }
+  
+  /*make label absolute and position it on input area*/
+  label {
+    font-size: 13px;
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+  }
+  
+  input {
+    padding: 10px 0 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #34495e;
+    font-size: 13px;
+    background: #ecf0f1;
+    text-align: center;
+  }
+  
+  /*magic happens here */
+  input:focus{
+    outline: none;
+    border-color: #2980b9;
+  }
+  
+  input:valid ~ label, /*detects if input has valid input*/
+  input:focus ~ label{ 
+    top: -20px;
+    font-weight: 0;
+  }
+  
+
+  .submitButton {
+    background-color: inherit;
+    border: 1px solid #c7c0c0;
+    font-size: 1em;
+    padding: 0.60em;
+    border-radius: 25px;
+    width: 150px;
+  }
