@@ -1,4 +1,4 @@
-### ![PWA Fire App](https://github.com/mayeedwin/pwafireapp/blob/master/app/src/images/others/pwafireapp.png) [PWA Fire App *Beta*](https://pwafire.org/developer/app/)
+ ### [PWA Fire App *Beta*](https://pwafire.org/developer/app/)
 
 Project [PWA Fire Bundle](https://github.com/mayeedwin/pwafire) is an open source javascript and json bundle that allows you to convert your existing website into a progressive web app or build one in a few.
 
@@ -26,7 +26,7 @@ Here is the basic skeleton for **PWA Fire App**  that each of the two starter PW
    
 For **node modules,**  follow the setup guide as curated in [the doc folder here](https://github.com/mayeedwin/pwafireapp/tree/master/docs) to get started building a scalable progressive web app with **PWA Fire App.** 
 
-```bash
+```b
 ├── app
 │   ├── build
 │   ├── node_modules
