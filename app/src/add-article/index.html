@@ -65,14 +65,14 @@
 
             <div class="navigate">
                 <p>
-                    <a id="customButton" href="#">Login First <i class="fas fa-sign-in-alt"></i></a></p>
+                    <a id="customButton" href="../auth/">Login First <i class="fas fa-sign-in-alt"></i></a></p>
                 <p>
-                    <a id="customButton" href="../"><i class="fas fa-arrow-circle-left"></i> Back Home </a>
+                    <a id="customButton" href="../latest/">Latest News <i class="fas fa-lightbulb"></i></a>
                 </p>
             </div>
 
            <section class="post-article">
-                <form class="article-form" onsubmit="return sendMessage()" id="formRedirect">
+                <form class="article-form" onsubmit="return postArticle()" id="formRedirect">
 
                     <div class="row">
                         <input type="text" id="article_url" required="">
@@ -89,7 +89,7 @@
                         <label for="article_caption">Article Caption</label>
                       </div>
                     
-                    <button id="submit" class="submitButton" type="button">Publish</button>
+                    <button id="submit" class="submitButton">Post Article</button>
                 </form>
            </section>
 
@@ -137,6 +137,15 @@
             <div id="snackbar"></div>
 
         </footer>
+        <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+         <!-- Firebase App is always required and must be first -->
+         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-functions.js"></script>
+         <script src="../assets/js/firestore.js"></script>
+        <script src="../assets/js/article.js"></script>
+        <script src="../assets/js/display.js"></script>
         <script src="../assets/js/app.js"></script>
     </body>
 

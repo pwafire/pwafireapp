@@ -2,7 +2,7 @@
  Your Javascript
   */
 
-console.log("I am a Beta version of pwafireapp 🐹");
+console.log("I am a Beta version of PWA Fire App 🐹");
 
 const divResult = document.getElementById('result');
 const divInstall = document.getElementById('installContainer');
@@ -111,12 +111,3 @@ self.addEventListener('message', (event) => {
 });
 
 */
-
-// badge API
-
-const unreadCount = 5;
-window.Badge.set(unreadCount);
-
-self.addEventListener('sync', () => {
-  self.Badge.set(getUnreadCount());
-});

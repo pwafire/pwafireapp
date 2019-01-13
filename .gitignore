@@ -3,3 +3,4 @@
 build/
 *.log
 app/node_modules/
+app/src/assets/js/firestore.js

@@ -1,0 +1,30 @@
+
+.auth 
+
+{
+    margin: 250px auto;
+
+}
+
+.firebaseui-tos {
+    color: #757575;
+    direction: ltr;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 24px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.firebaseui-idp-button {
+    direction: ltr;
+    font-weight: 500;
+    height: auto;
+    line-height: normal;
+    max-width: 190px;
+    min-height: 40px;
+    padding: 8px 16px;
+    text-align: center;
+    width: 100%;
+     border-radius: 25px;
+}

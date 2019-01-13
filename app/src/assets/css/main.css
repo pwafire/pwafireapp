@@ -223,7 +223,8 @@ a
   align-items: center;
   text-align: left;
   margin: auto;
-  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
   overflow-y: scroll;
   height: 225px;
   border-radius: 10px;
