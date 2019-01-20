@@ -58,18 +58,16 @@
                 <h1 id="title">
                     What's trending for Web?
                 </h1>
-                <!--
-                    <p id="desc">
-                    Share an amazing web article, tweet or post
+                <p id="desc">
+                    Share an amazing web article, tweet or post ( under development )
                 </p>
-                -->
             </div>
 
             <div class="navigate">
                 <p>
-                    <a id="auth_in" href="../auth/">Login First : ></a></p>
+                    <a id="customButton" href="../auth/">Login First <i class="fas fa-sign-in-alt"></i></a></p>
                 <p>
-                    <a id="customButton" href="../latest/">Latest News : ></a>
+                    <a id="customButton" href="../latest/">Latest News <i class="fas fa-lightbulb"></i></a>
                 </p>
             </div>
 
@@ -77,7 +75,7 @@
                 <form class="article-form" onsubmit="return postArticle()" id="formRedirect">
 
                     <div class="row">
-                        <input type="url" id="article_url" required="">
+                        <input type="text" id="article_url" required="">
                         <label for="article_url">Article Url</label>
                       </div>
 
@@ -146,15 +144,9 @@
          <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-firestore.js"></script>
          <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-functions.js"></script>
          <script src="../assets/js/firestore.js"></script>
-         <script src="../assets/js/login.js"></script>
         <script src="../assets/js/article.js"></script>
         <script src="../assets/js/display.js"></script>
         <script src="../assets/js/app.js"></script>
-        <script type="module">
-            // Important: change the filename to workbox-window.prod.mjs before deploying.
-                import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0-beta.1/workbox-window.dev.mjs'
-                new Workbox('../service-worker.js').register();
-            </script>
     </body>
 
 </html>

@@ -14,7 +14,7 @@
         }
     </script>
         <!-- end of service worker -->
-        <title>PWA Fire App - Workbox Progressive Web App Demo And Starter App</title>
+        <title>PWA Fire App</title>
         <meta name="Description" content="Author : Maye Edwin, 
     Publisher : PWAFire.Org, Category: Web, Language : Javascript, CSS, HTML, 
     Availability : Open Source">
@@ -64,7 +64,7 @@
             <img class="app-logo" src="images/home/pwafireapp-frog-icon.gif" alt="pwafireapp-logo">
            <div class="header-intro">
             <h1 id="title">
-                I am a <code>Beta</code> version
+                I am <code>Beta</code> version
             </h1>
 
             <p id="desc" class="desktop">
@@ -89,7 +89,7 @@
                     <a id="customButton" href="https://pwafire.org/developer/app" target="_blank" rel="noopener">Get
                         Started <i class="fas fa-rocket"></i></a></p>
                 <p>
-                    <a id="customButton" href="latest/index.html">Latest News <i class="fas fa-lightbulb"></i></a>
+                    <a id="customButton" href="latest/">Latest News <i class="fas fa-lightbulb"></i></a>
                 </p>
             </div>
 
@@ -140,11 +140,6 @@
         </footer>
 
         <script src="assets/js/app.js"></script>
-        <script type="module">
-        // Important: change the filename to workbox-window.prod.mjs before deploying.
-            import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0-beta.1/workbox-window.dev.mjs'
-            new Workbox('/service-worker.js').register();
-        </script>
     </body>
 
 </html>

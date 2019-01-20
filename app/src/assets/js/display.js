@@ -12,4 +12,3 @@ var postArticle;
         article_caption.innerText = posts.article_caption;
     });
 });
-

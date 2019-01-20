@@ -30,5 +30,5 @@ document
 .getElementById("formRedirect")
   .addEventListener("submit", function(e) {
     e.preventDefault();
-    window.location.href = "../latest";
+    window.location.href = "";
   });
