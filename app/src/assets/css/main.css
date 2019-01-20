@@ -46,7 +46,7 @@ h3 {
   text-align: center;
   text-decoration: wavy;
   text-rendering: optimizeSpeed;
-  flood-color: #777;
+  flood-color: rgb(49, 47, 47);
 }
 
 .hidden {
@@ -89,20 +89,37 @@ button[disabled] {
   margin: 7px;
 }
 
+#auth_in {
+  background-color: inherit;
+  border: 1px solid #c7c0c0;
+  font-size: 0.75em;
+  padding: 0.60em;
+  border-radius: 25px;
+  width: 100px;
+  display: inline-block;
+  margin: 7px;
+}
+
 *, ::after, ::before {
   box-sizing: unset;
 }
 
 /** set what happens on focus **/
-#customButton:focus {
+#customButton {
   outline: 0px dotted;
-  color: #0dd3ff;
+  color: rgb(49, 47, 47);
+  outline: 0px auto -webkit-focus-ring-color;
+}
+#auth_in:focus, {
+  outline: 0px dotted;
+  color: rgb(49, 47, 47);
   outline: 0px auto -webkit-focus-ring-color;
 }
 
+
 button:focus {
   outline: 0px dotted;
-  color: #0dd3ff;
+  color: rgb(49, 47, 47);
   outline: 0px auto -webkit-focus-ring-color;
 }
 
@@ -253,7 +270,7 @@ a
   .latest-news {
     width: auto;
     margin: 10px;
-    height: 400px;
+    height: 250px;
   }
   .desktop
 {
@@ -293,7 +310,7 @@ a
 .latest-news {
   width: auto;
   margin: 10px;
-  height: 400px;
+  height: 250px;
 }
 
 .desktop

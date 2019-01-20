@@ -58,7 +58,7 @@
                     What's coming up here?
                 </h1>
                 <p id="desc">
-                    We are adding cool and amazing latest progressive web news app directory 
+                    We are adding cool and amazing latest progressive web news app directory
                 </p>
             </div>
 
@@ -72,21 +72,44 @@
             </div>
 
             <section class="latest-news fixed-content">
-                <article>
-                    <a id="article_url"  href=""
-                        target="_blank" rel="noopener" >
-                        <h2 id="article_title">
-                           
-                        </h2>
+            <article>
+                    <a id="article_url" href="" target="_blank" rel="noopener">
+                        <h2 id="article_title"></h2>
                     </a>
                     <div class="latest-content">
-                        <p id="article_caption">
-                            
-                        </p>
+                        <p id="article_caption"></p>
                     </div>
-                    <div>
+                   <!--
+                        <div>
                         <a id="customButton" href="../"><i class="fas fa-arrow-circle-left"></i> Read Article</a>
                     </div>
+                   -->
+                </article>
+                 <article>
+                    <a id="" href="https://pwafire.org" target="_blank" rel="noopener">
+                        <h2 id="article_title">Learn how to build Proressive Web First Experiences</h2>
+                    </a>
+                    <div class="latest-content">
+                        <p id="">PWAFire.Org helps you build amazing web experiences by providing you with web.dev guide and tool-kits that helps you build progressive web apps with best web practices.</p>
+                    </div>
+                   <!--
+                        <div>
+                        <a id="customButton" href="../"><i class="fas fa-arrow-circle-left"></i> Read Article</a>
+                    </div>
+                   -->
+                </article>
+                <article>
+                    <a id="" href="https://pwafire.org" target="_blank" rel="noopener">
+                        <h2 id="article_title">Learn how to build Proressive Web First Experiences</h2>
+                    </a>
+                    <div class="latest-content">
+                        <p id="">PWAFire.Org helps you build amazing web experiences by providing you with web.dev guide and tool-kits that helps you build progressive web apps with best web practices.</p>
+                    </div>
+                   <!--
+                        <div>
+                        <a id="customButton" href="../"><i class="fas fa-arrow-circle-left"></i> Read Article</a>
+                    </div>
+                   -->
                 </article>
 
             </section>
@@ -145,6 +168,11 @@
         <script src="../assets/js/app.js"></script>
         <script src="../assets/js/view.js"></script>
         <script src="../assets/js/display.js"></script>
+        <script type="module">
+            // Important: change the filename to workbox-window.prod.mjs before deploying.
+                import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0-beta.1/workbox-window.dev.mjs'
+                new Workbox('../service-worker.js').register();
+            </script>
     </body>
 
 </html>
