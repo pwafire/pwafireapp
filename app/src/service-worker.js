@@ -1,7 +1,7 @@
 
 // Authored by Maye Edwin : https://twitter.com/MayeEdwin1
 // Add custom cache strategies and routing methods
-// pwafire 4.0.0
+// pwafire v4.0.1
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js');
 

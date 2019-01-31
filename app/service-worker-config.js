@@ -4,7 +4,7 @@ module.exports = {
     */
     "globDirectory": "build/",
     "globPatterns": [
-    /* Edit to add all file to cache; configure for your project as shown below 
+    /* Edit to add all file to pre-cache; configure for your project as shown below 
     e.g cache all .css files in the root folder
     */
     "index.html",
