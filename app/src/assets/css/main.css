@@ -7,6 +7,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+.pwafireapp {
+  height: 100%;
+  min-height: 100%;
+}
+
 .navbar {
   display: flex;
   background: #fff;
@@ -20,10 +25,20 @@ body {
   right: 0;
   z-index: 1000;
 }
+
 .main-div {
-  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  width: 65%;
 }
 
 .app-logo {
@@ -35,14 +50,12 @@ h3 {
   font-weight: 500;
 }
 
-#title
-{
+#title {
   font-size: 18px;
   font-weight: 500;
 }
 
-#desc
-{
+#desc {
   text-align: center;
   text-decoration: wavy;
   text-rendering: optimizeSpeed;
@@ -100,7 +113,9 @@ button[disabled] {
   margin: 7px;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: unset;
 }
 
@@ -110,7 +125,8 @@ button[disabled] {
   color: rgb(49, 47, 47);
   outline: 0px auto -webkit-focus-ring-color;
 }
-#auth_in:focus, {
+
+#auth_in:focus {
   outline: 0px dotted;
   color: rgb(49, 47, 47);
   outline: 0px auto -webkit-focus-ring-color;
@@ -124,10 +140,10 @@ button:focus {
 }
 
 
-a 
-{
+a {
   text-decoration: none;
 }
+
 .navigate {
   display: flex;
   justify-content: center;
@@ -226,8 +242,7 @@ a
   }
 }
 
-.footer
-{
+.footer {
   display: block;
   background: inherit;
   border-bottom: 0.50px solid #c7c0c0;
@@ -256,42 +271,42 @@ a
 }
 
 /* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-    .main-div {
-      margin: 0 auto;
-      text-align: center;
-      width: auto;
-      padding-left: 20px;
-      padding-right: 20px;
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .main-div {
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
   .latest-news {
     width: auto;
     margin: 10px;
     height: 250px;
   }
-  .desktop
-{
-  display: none;
-}
-.mobile{
-  display: block;
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .post-article {
+    width: auto;
+  }
 }
 
-.post-article {
-  width: auto;
-}
-}
-
-.mobile{
+.mobile {
   display: none;
 }
+
 /* Portrait and Landscape */
 @media only screen and (-Webkit-min-device-pixel-ratio:1.5),
- only screen and (-moz-min-device-pixel-ratio:1.5),
- only screen and (min-device-pixel-ratio:1.5) {
+only screen and (-moz-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5) {
 
   .main-div {
     margin: 0 auto;
@@ -299,58 +314,55 @@ a
     width: auto;
     padding-left: 5px;
     padding-right: 5px;
-}
+  }
 
-.header-intro
-{
-  padding: 5px;
-  display: block;
-}
-
-.latest-news {
-  width: auto;
-  margin: 10px;
-  height: 250px;
-}
-
-.desktop
-{
-  display: none;
-}
-.mobile{
-  display: block;
-}
-
-#installContainer button {
-  width: 120px;
-}
-
-#snackbar {
-width: auto;
-}
-
-.post-article {
-width: auto;
-}
+  .header-intro {
+    padding: 5px;
+    display: block;
     
- }
+  }
 
- /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+  .latest-news {
+    width: auto;
+    margin: 10px;
+    height: 250px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  #installContainer button {
+    width: 120px;
+  }
+
+  #snackbar {
+    width: auto;
+  }
+
+  .post-article {
+    width: auto;
+  }
+
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
   .latest-news {
     margin-left: 75px;
     margin-right: 75px;
-}
+  }
 
-#snackbar {
-  width: 350px;
-}
+  #snackbar {
+    width: 350px;
+  }
 
 }
 
@@ -358,10 +370,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
 .latest-news h2 {
   font-size: 15px;
   font-weight: 500;
- }
- .latest-news p {
+}
+
+.latest-news p {
   font-size: 13px;
- }
+}
 
 
 article {
@@ -385,8 +398,9 @@ article {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: rgba(113, 122, 116, 0.4); 
+  background: rgba(113, 122, 116, 0.4);
 }
+
 ::-webkit-scrollbar-thumb:window-inactive {
-background: rgba(113, 122, 116, 0.4); 
+  background: rgba(113, 122, 116, 0.4);
 }

@@ -1,0 +1,50 @@
+
+/* 
+jenga button 
+*/
+.btn {
+    background-color: inherit;
+    border: 1px solid #c7c0c0;
+    font-size: 0.75em;
+    padding: 0.60em;
+    border-radius: 25px;
+    width: 100px;
+    display: inline-block;
+    margin: 7px;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: unset;
+  }
+
+  
+button[disabled] {
+    opacity: 0.5;
+    border: 1px solid rgba(74, 20, 140, 0.5) !important;
+  }
+  
+.btnCustom {
+    background-color: inherit;
+    border: 1px solid #c7c0c0;
+    font-size: 0.75em;
+    padding: 0.60em;
+    border-radius: 25px;
+    width: 100px;
+    display: inline-block;
+    margin: 7px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/** set what happens on focus **/
+.btn:focus {
+    outline: 0px dotted;
+    color: rgb(49, 47, 47);
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+.btnCustom:focus {
+    outline: 0px dotted;
+    color: rgb(49, 47, 47);
+    outline: 0px auto -webkit-focus-ring-color;
+}
