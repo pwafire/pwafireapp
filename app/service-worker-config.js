@@ -1,6 +1,6 @@
 module.exports = {
     /* The base directory you wish to match globPatterns against, 
-     relative to the current working directory.
+     relative to the current working directory
     */
     "globDirectory": "build/",
     "globPatterns": [

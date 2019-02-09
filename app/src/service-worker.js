@@ -33,7 +33,7 @@ if (workbox) {
     -- notes --
     add url for other sub-directories that a user visits depending
     on his or her needs "/subdirectory/" as shown below ; *subdirectory*
-    could be any name eg *latest* if a user shows interest in *latest* categ of a news app; 
+    could be any name eg *latest* if a user shows interest in *latest* categ of a news app;
     this means all .html articles in the *latest* route that the user reads, get cached 
    */
   workbox.routing.registerRoute(
