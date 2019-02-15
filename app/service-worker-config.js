@@ -14,8 +14,7 @@ module.exports = {
     "images/icons/icon-144x144.png",
     // Pre-cache app assets i.e css, scss, js
     "assets/js/*.js",
-    "assets/css/*.css",
-    "assets/scss/*.scss"
+    "assets/css/*.css"
     ],
     /* The path and filename of the service worker file that will 
     be created by the build process
