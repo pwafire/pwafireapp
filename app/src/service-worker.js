@@ -29,6 +29,19 @@ if (workbox) {
     })
   );
 
+    // cache google fonts
+    workbox.routing.registerRoute(
+      new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
+      workbox.strategies.networkFirst({
+        cacheName: 'google-fonts',
+        plugins: [
+          new workbox.cacheableResponse.Plugin({
+            statuses: [0, 200],
+          }),
+        ],
+      })
+    );
+  
   /* cache resources from a specific subdirectory
     -- notes --
     add url for other sub-directories that a user visits depending
@@ -67,19 +80,6 @@ if (workbox) {
           maxEntries: 20,
         }),
       ]
-    })
-  );
-
-  // cache google fonts
-  workbox.routing.registerRoute(
-    new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
-    workbox.strategies.networkFirst({
-      cacheName: 'google-fonts',
-      plugins: [
-        new workbox.cacheableResponse.Plugin({
-          statuses: [0, 200],
-        }),
-      ],
     })
   );
 
