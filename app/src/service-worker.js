@@ -29,7 +29,7 @@ if (workbox) {
     })
   );
 
-    // cache google fonts
+  // cache google fonts
     workbox.routing.registerRoute(
       new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
       workbox.strategies.networkFirst({
