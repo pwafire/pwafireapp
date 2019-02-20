@@ -8,7 +8,7 @@ module.exports = {
     e.g cache all .css files in the root folder
     */
     "index.html",
-    "manifest.json",
+    "app.webmanifest",
     "images/home/*.gif",
     // Pre-cache the default app icon needed for app installation
     "images/icons/icon-144x144.png",
