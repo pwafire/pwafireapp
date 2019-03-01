@@ -3,7 +3,7 @@
 // Add custom cache strategies and routing methods
 // pwafire v4.0.1
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js');
 
 if (workbox) {
   console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🐹`);
@@ -17,8 +17,8 @@ if (workbox) {
    they should come first as in this app
     */
   workbox.routing.registerRoute(
-    /(.*)others(.*)\.(?:|svg|png|gif|jpg)/,
-    workbox.strategies.networkFirst({
+    /(.*)others(.*)\.(?:|svg|png|gif|jpg)/, 
+    new workbox.strategies.NetworkFirst({
       cacheName: 'images-cache',
       plugins: [
         new workbox.expiration.Plugin({
@@ -32,7 +32,7 @@ if (workbox) {
   // cache google fonts
     workbox.routing.registerRoute(
       new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
-      workbox.strategies.networkFirst({
+      new workbox.strategies.NetworkFirst({
         cacheName: 'google-fonts',
         plugins: [
           new workbox.cacheableResponse.Plugin({
@@ -51,7 +51,7 @@ if (workbox) {
    */
   workbox.routing.registerRoute(
     new RegExp('/latest/'),
-    workbox.strategies.staleWhileRevalidate({
+    new workbox.strategies.StaleWhileRevalidate({
       // use a custom cache name
       cacheName: 'latest-cache',
       plugins: [
@@ -71,7 +71,7 @@ if (workbox) {
     // cache js, css, scc files 
     /.*\.(?:css|js|scss|)/,
     // use cache but update in the background ASAP
-    workbox.strategies.staleWhileRevalidate({
+    new workbox.strategies.StaleWhileRevalidate({
       // use a custom cache name
       cacheName: 'assets-cache',
       plugins: [
@@ -90,8 +90,8 @@ if (workbox) {
   and control a web page as soon as possible
   */
 
-  workbox.skipWaiting();
-  workbox.clientsClaim();
+ workbox.core.skipWaiting();
+ workbox.core.clientsClaim();
 
 } else {
   console.log("Oops! Workbox didn't load 👺");
