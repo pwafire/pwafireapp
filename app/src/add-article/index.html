@@ -139,12 +139,12 @@
             <div id="snackbar"></div>
 
         </footer>
-        <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
          <!-- Firebase App is always required and must be first -->
-         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-app.js"></script>
-         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-auth.js"></script>
-         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-firestore.js"></script>
-         <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-functions.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
          <script src="../assets/js/firestore.js"></script>
          <script src="../assets/js/login.js"></script>
         <script src="../assets/js/article.js"></script>
@@ -153,7 +153,7 @@
         <script type="module">
             import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
             if ('serviceWorker' in navigator) {
-              const wb = new Workbox('/service-worker.js');
+              const wb = new Workbox('../service-worker.js');
               wb.register();
             }
         </script>
