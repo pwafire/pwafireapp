@@ -151,10 +151,12 @@
         <script src="../assets/js/display.js"></script>
         <script src="../assets/js/app.js"></script>
         <script type="module">
-            // Important: change the filename to workbox-window.prod.mjs before deploying.
-                import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0-beta.1/workbox-window.dev.mjs'
-                new Workbox('../service-worker.js').register();
-            </script>
+            import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
+            if ('serviceWorker' in navigator) {
+              const wb = new Workbox('/service-worker.js');
+              wb.register();
+            }
+        </script>
     </body>
 
 </html>
