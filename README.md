@@ -40,7 +40,7 @@ For **node modules,**  follow the setup guide as curated in [the doc folder here
 |          ├── others
 |       ├── pages
 │       ├── index.html
-│       ├── manifest.json
+│       ├── app.webmanifest
 │       ├── service-worker.js
 │   ├── package-lock.json
 │   ├── package.json
@@ -67,7 +67,7 @@ file as in [this codelab here](https://pwafire.org/developer/pwa/started/#sw-con
 |          ├── others
 |       ├── pages
 │       ├── index.html
-│       ├── manifest.json
+│       ├── app.webmanifest
 │       ├── service-worker.js
 
 ```
