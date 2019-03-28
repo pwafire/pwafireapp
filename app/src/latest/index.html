@@ -71,48 +71,39 @@
                 </p>
             </div>
 
-            <section class="latest-news fixed-content">
-            <article>
+            <section id="view-post" class="latest-news fixed-content">
+            
+                <article>
                     <a id="article_url" href="" target="_blank" rel="noopener">
                         <h2 id="article_title"></h2>
                     </a>
                     <div class="latest-content">
                         <p id="article_caption"></p>
                     </div>
-                   <!--
-                        <div>
-                        <a id="customButton" href="../"><i class="fas fa-arrow-circle-left"></i> Read Article</a>
-                    </div>
-                   -->
-                </article>
-                 <article>
-                    <a id="" href="https://pwafire.org" target="_blank" rel="noopener">
-                        <h2 id="article_title">Learn how to build Proressive Web First Experiences</h2>
-                    </a>
-                    <div class="latest-content">
-                        <p id="">PWAFire.Org helps you build amazing web experiences by providing you with web.dev guide and tool-kits that helps you build progressive web apps with best web practices.</p>
-                    </div>
-                   <!--
-                        <div>
-                        <a id="customButton" href="../"><i class="fas fa-arrow-circle-left"></i> Read Article</a>
-                    </div>
-                   -->
-                </article>
-                <article>
-                    <a id="" href="https://pwafire.org" target="_blank" rel="noopener">
-                        <h2 id="article_title">Learn how to build Proressive Web First Experiences</h2>
-                    </a>
-                    <div class="latest-content">
-                        <p id="">PWAFire.Org helps you build amazing web experiences by providing you with web.dev guide and tool-kits that helps you build progressive web apps with best web practices.</p>
-                    </div>
-                   <!--
-                        <div>
-                        <a id="customButton" href="../"><i class="fas fa-arrow-circle-left"></i> Read Article</a>
-                    </div>
-                   -->
                 </article>
 
+              
+                <article>
+                    <div id="main"></div>
+                </article>
+
+             
             </section>
+
+          <!-- <div>
+            <ul>
+                <li>
+                  <span></span>
+                </li>
+              </ul>
+           </div>-->
+        <div class="content">
+            <form id="add-cafe-form"></form>
+            <ul id="cafe-list"></ul>
+        </div>
+
+        </div>
+            
 
             <!--
     Install/Share buttons, disabled by default 
@@ -158,15 +149,15 @@
             <div id="snackbar"></div>
 
         </footer>
-        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
         <!-- Firebase App is always required and must be first -->
-        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-functions.js"></script>
         <script src="../assets/js/firestore.js"></script>
-        <script src="../assets/js/app.js"></script>
-        <script src="../assets/js/view.js"></script>
+        <script src="http://pure.github.io/pure/libs/pure.js"></script>
+        <script src="../assets/js/render.js"></script>
         <script src="../assets/js/display.js"></script>
         <script type="module">
             import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';

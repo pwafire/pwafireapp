@@ -3,10 +3,10 @@
 // Add custom cache strategies and routing methods
 // pwafire v4.0.1
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.1.1/workbox-sw.js');
 
 if (workbox) {
-  console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire 🐹`);
+  console.log('Yay! Workbox is loaded ! Cheers to PWA Fire 🐹');
   workbox.precaching.precacheAndRoute([]);
 
   /* cache images in the e.g others folder; edit to other folders you got 
